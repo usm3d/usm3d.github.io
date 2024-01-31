@@ -1,100 +1,459 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>1st Workshop on Urban Scene Modeling: Where Vision Meets Photogrammetry and Graphics
+</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="CVPR 2020 Tutorial on Synchronization and Cycle Consistency in Computer Vision.">
+        <meta name="keywords" content="CVPR, Synchronization, Multiple Rotation Averaging, Cycle Consistency, Consistent Maps, 3D Reconstruction, Tutorial, CVPR Tutorial">
+        <meta name="author" content="Tolga Birdal">
+        <meta name="viewport" content="width=device-width, initial-scale=0.75">
+        <meta http-equiv="Cache-control" content="public" max-age="86400">
 
-<style>
-	.markdown-body {
-		box-sizing: border-box;
-		min-width: 200px;
-		max-width: 980px;
-		margin: 0 auto;
-		padding: 45px;
-	}
+		<!--== CSS Files ==-->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/style.min.css" rel="stylesheet" media="screen">
+		<link href="css/animate.min.css" rel="stylesheet" media="screen">
+		<link href="css/font-awesome.css" rel="stylesheet" media="screen">
+		<link href="css/flexslider.css" rel="stylesheet" media="screen">
+		<link href="css/fancySelect.css" rel="stylesheet" media="screen">
+		<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
+		<link href="css/responsive.css" rel="stylesheet" media="screen">
 
-	@media (max-width: 767px) {
-		.markdown-body {
-			padding: 15px;
-		}
-	}
+		<!--== Google Fonts ==-->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		  ga('create', 'UA-98679125-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+        <style>
+.pdfobject-container { height: 50rem; border: 1rem solid rgba(0,0,0,.4); }
+.vidstyle{position:relative;width:100%;height:0;padding-bottom:56.27198%;}.vidstyle iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
 </style>
-<article class="markdown-body">
-    <h1 style="text-align:center">Urban Scene Modeling</h1>
-    
-    <br>
-    <h5 style="text-align:center">
-    <div class="container" style="text-align:center">
-    <div class="match-author"><a href="https://jackml.com/"><img src="imgs/jack-langerman.png"><br><p>Jack Langerman</p></a></div>
-    <div class="match-author"><a href="https://profiles.ucalgary.ca/ruisheng-wang"><img src="imgs/ruisheng-wang.jpg"><br><p>Ruisheng Wang</p></a></div>
-    <div class="match-author"><a href="https://ilkedemir.github.io/"><img src="imgs/ilke-demir.png"><br><p>İlke Demir</p></a></div>
-    <div class="match-author"><a href="http://tbirdal.me/"><img src="imgs/tolga-birdal.jpg"><br><p>Tolga Birdal</p></a></div>
-    <div class="match-author"><a href="#"><img src="imgs/#.jpg"><br><p>Add Your Name Here</p></a></div>
+	</head>
+	<body>
+		<div id="home"></div>
+		<header id="header" class="header" data-stellar-ratio="0.5">
 
-        </div>
-        </h5>
-    <p></p>
-    
-    <!--[Stanford University](http://www.stanford.edu) & [Technical University of Munich](http://www.tum.de) & Siemens AG-->
-    
-    <p></p>
-    <!-- <h5 style="text-align:center"><a href="http://geometry.stanford.edu">Stanford University</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.tum.de">Max Planck Institute for Informatics, SIC</a></h5> -->
-    <h5 style="text-align:center"><a href="http://example.com">Affiliation One</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.example.com">Affiliation Two</a></h5>
-    <p></p><p></p><br>
-    
-   <div class="row">
-                <div class="col-lg-12 col-lg-offset-0 text-center">
-                    <ul class="nav nav-pills nav-justified">
-                        <li>
-                            <h4><strong>Urban Scene Modeling</strong></h4>
-                                <p></p><p></p><br>
-                            </a>
-                        </li>
-                    </ul>
+			<!--== Preloader ==-->
+			<div id="preloader"><div class="preloader"></div></div>
+
+			<!--== Caption ==-->
+			<div class="header-caption" data-stellar-ratio="2">
+				<div class="container">
+					<div class="box">
+						<!--<h2w>Multiview Relationships in 3D Data<br/></h2w><h3w>In Conjunction with ICCV 2017<br/></h3w>-->
+                        <h2w>1st Workshop on Urban Scene Modeling: Where Vision Meets Photogrammetry and Graphics
+<br/></h2w><h2w>In Conjunction with CVPR 2024<br/></h2w>
+						<span class="typed"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--== Header Background ==-->
+			<div id="header-background" class="header-background">
+				<ul class="slides">
+                    <li><img src="images/background.jpg" alt="CVPR Workshop 2024 - Urban3D"></li>
+                    <!--<li><img src="images/demo/bg-slide-02.jpg" alt="Slide 2"></li>-->
+				</ul>
+			</div>
+
+		</header>
+
+		<div id="navigation-wrap" class="navigation-wrap">
+			<div id="navigation" class="navigation">
+				<div class="container">
+					<nav class="navbar navbar-custom" role="navigation">
+
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<!--== Site Menu ==-->
+						<div class="collapse navbar-collapse" id="menu">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#home">Home</a></li>
+								<li><a href="#speakers">Keynotes</a></li>
+                                <li><a href="#callforpapers">List of Topics</a></li>
+								<li><a href="#schedule">Schedule</a></li>
+								<li><a href="#location">Location</a></li>
+							</ul>
+						</div>
+
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div class="container content">
+
+
+
+			<!--===============================-->
+			<!--== About ======================-->
+			<!--===============================-->
+			<section id="about">
+				<div class="row">
+					<div class="col-sm-12 col-md-2">
+						<div class="section-header text-left">
+                            <img src="images/logo.jpg" alt="CVPR Tutorial SynchInVision 2020">
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-8">
+						<!--<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
+                        Rapid urbanization poses social and environmental challenges. Addressing these issues
+effectively requires access to accurate and up-to-date 3D building models, obtained promptly and
+cost-effectively. Urban modeling is an interdisciplinary topic among computer vision, graphics,
+and photogrammetry. The demand for automated interpretation of scene geometry and semantics
+has surged due to various applications, including autonomous navigation, augmented reality,
+smart cities, and digital twins. As a result, substantial research effort has been dedicated to urban
+scene modeling within the computer vision and graphics communities, with a particular focus on
+photogrammetry, which has coped with urban modeling challenges for decades.
+This workshop is intended to bring researchers from these communities together. Through invited
+talks, spotlight presentations, a workshop challenge, and a poster session, it will increase
+interdisciplinary interaction and collaboration among photogrammetry, computer vision and
+graphics. We also solicit original contributions in the areas related to urban scene modeling. The
+list of suggested topics includes but is not limited to:
+					</div>
+					<div class="col-xs-3 col-md-2">
+						<div class="number wow bounceIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+							<b class="accent">4</b>
+							Tutors
+						</div>
+                        <div class="number wow bounceIn" data-wow-duration="0.8s" data-wow-delay="0.8s">
+							<b class="accent">1/2</b>
+							Day
+						</div>
+					</div>
+				</div>
+			</section>
+            <section id="callforpapers">
+				<div class="row">
+                    <div class="col-sm-12 col-md-2">
+						<div class="section-header text-left">
+							<h2><b>Challenge</b></h2>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<!--<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
+						The goal of this workshop is to push the frontier in urban scene modeling. Focal points for discussions include but are not limited to:
+                        <ul style="list-style-type:none; text-align:left;">
+                        <li> 3D Building reconstruction/modeling from large-scale 3D point clouds and images</li>
+                        <li> Semantic/instance segmentation of 3D point clouds and images on urban scenes</li>
+                        <li> Neural implicit scene representation</li>
+                        <li> Diffusion models and GANs for occlusion-free image generation for realistic texture mapping</li>
+                        <li> ... </li>
+						</ul>
+					</div>
                 </div>
-        </div>
-        
-       <div class="text-justify">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis feugiat vivamus at augue eget arcu. Tincidunt praesent semper feugiat nibh. Praesent elementum facilisis leo vel fringilla. Dui faucibus in ornare quam viverra orci sagittis. Et malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Ut tortor pretium viverra suspendisse potenti nullam. Elit pellentesque habitant morbi tristique senectus et netus. Imperdiet nulla malesuada pellentesque elit. Dictum sit amet justo donec enim.
+			</section>
 
-                Euismod elementum nisi quis eleifend. Arcu vitae elementum curabitur vitae nunc sed velit. Vitae purus faucibus ornare suspendisse. Nunc sed id semper risus in hendrerit gravida rutrum. Tristique nulla aliquet enim tortor. Lacus laoreet non curabitur gravida arcu ac tortor. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Lacus luctus accumsan tortor posuere ac ut consequat semper. Auctor urna nunc id cursus. Commodo elit at imperdiet dui accumsan sit amet nulla. Diam vel quam elementum pulvinar etiam non quam lacus suspendisse. Enim nec dui nunc mattis enim ut tellus elementum. Donec enim diam vulputate ut pharetra sit amet. Dolor sit amet consectetur adipiscing elit ut. Bibendum enim facilisis gravida neque convallis a cras semper. Risus at ultrices mi tempus. Malesuada fames ac turpis egestas maecenas pharetra convallis. Risus sed vulputate odio ut.
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <img width="850" src="docs/data_teaser.png">
-            </div>
-        </div>
-    </div>
- <p></p><p></p><br>
+			<section id="speakers" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
+							<h2><b>Tutors</b></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+                    <div class="col-sm-6 col-md-3 ">
+						<div class="speaker">
+							<img src="images/organizers/tolga-birdal.jpg" alt="Tolga Birdal">
+							<div class="speaker-info">
+								<h3>Tolga<br> <b>Birdal</b></h3>
+								<p>Assistant Professor<br>Imperial College London</p>
+							</div>
+							<ul class="speaker-contacts">
+                                <li><a target="_blank" href="http://www.tbirdal.me" class="fa fa-home"></a></li>
+                                <li><a target="_blank" href="https://profiles.stanford.edu/tolga-birdal" class="fa fa-home"></a></li>
+								<li><a target="_blank" href="https://www.linkedin.com/in/tbirdal/" class="fa fa-linkedin"></a></li>
+                                <li><a target="_blank" href="https://twitter.com/tolgabirdal" class="fa fa-twitter"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 ">
+						<div class="speaker">
+							<img src="images/organizers/federica-arrigoni.jpg" alt="Federica Arrigoni">
+							<div class="speaker-info">
+								<h3>Federica<br> <b>Arrigoni</b></h3>
+								<p>Assistant Professor<br>University of Trento</p>
+							</div>
+							<ul class="speaker-contacts">                                
+                                <li><a target="_blank" href="https://scholar.google.it/citations?user=bzBtqfQAAAAJ&hl=it" class="fa fa-home"></a></li>
+							</ul>
+						</div>
+					</div>	
+                    <div class="col-sm-6 col-md-3 ">
+						<div class="speaker">
+							<img src="images/organizers/qixing-huang.jpg" alt="Qixing Huang">
+							<div class="speaker-info">
+								<h3>Qixing<br> <b>Huang</b></h3>
+								<p>Assistant Professor<br>University of Texas Austin</p>
+							</div>
+							<ul class="speaker-contacts">
+                                <li><a target="_blank" href="https://www.cs.utexas.edu/~huangqx/" class="fa fa-home"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3 ">
+						<div class="speaker">
+							<img src="images/organizers/leonidas-guibas.jpg" alt="Leonidas Guibas">
+							<div class="speaker-info">
+								<h3>Leonidas<br> <b>Guibas</b></h3>
+								<p>Paul Pigott Professor<br>Stanford University</p>
+							</div>
+							<ul class="speaker-contacts">
+                                <li><a target="_blank" href="https://geometry.stanford.edu" class="fa fa-home"></a></li>
+								<li><a target="_blank" href="https://profiles.stanford.edu/leonidas-guibas" class="fa fa-home"></a></li>
+							</ul>
+						</div>
+					</div>         
+					<!--<div class="col-sm-12 col-md-12">
+						<button class="button button-icon pull-right">Show more <span class="fa fa-chevron-down"></span></button>
+					</div>-->
+				</div>
+			</section>
 
-    <div class="row">
-                <div class="col-lg-12 col-lg-offset-0 text-center">
-                    <ul class="nav nav-pills nav-justified">
-                        <li>
-                            <a href="http://www.example.com"><h4><strong>Link to the dataset?</strong></h4>
-                            <!-- <image src="docs/CVPR21_thumb.jpg" height="480px"> -->
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-    
-<h2>Citation</h2>
-    <blockquote>
-  @inproceedings{citationTag,
-  <br>title={Urban Scene Modeling},
-  <br>author={author list},
-  <br>journal={},
-  <br>year={2024}
-  <br>}<p> </p>
-</blockquote>
+			<!--===============================-->
+			<!--== Schedule ===================-->
+			<!--===============================-->
+			<section id="schedule" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="section-header text-left">
+							<h2>The <b>schedule</b></h2>
+							<p>We have a packed and exciting half day ahead of us! The tutorials are pre-recorded and provided along with the corresponding slides. You can watch them any time. The schedule is for the Q&amp;A session and is given with respect to PST.
+                                For attending Q&amp;As we use the <a href=https://zoom.us/j/91565476541?pwd=bGhibWpRSGJ5NmVCVjVZUTFSL3JuQT09>zoom-link reserved by CVPR</a>.
+                            </p>
+						</div>
+					</div>
+				</div>
+                
+                
+                <div class="row">
+					<div class="col-sm-12">
+						<div class="content-tabs">
+							<div class="tab-content">
+								<div class="tab-pane fade in active" id="tab1">
+									<ul class="accordion">
+										<li>
+											<a class="accordion-heading">
+												<span class="schedule-time accent">
+													01<sup>15</sup>pm
+												</span>
+												<div class="schedule-speaker">
+													<img src="images/organizers/tolga-birdal.jpg" alt="Tolga Birdal">
+												</div>
+												<h4 class="accordion-title"><b>Tolga Birdal</b>: Introduction and Uncertainty & Ambiguities in Synchronization</h4>
+											</a>
+											<div class="accordion-body">
+												<p>
+													Tolga Birdal is a Postdoctoral Research Fellow at the Geometric Computing group of Prof. Leonidas Guibas. He has recently defended his PhD thesis at the Computer Vision Group, Chair for Computer Aided Medical Procedures, Technical University of Munich and was a Doktorand at Siemens AG. He completed his Bachelors as an Electronics Engineer at the Sabanci University in 2008. In his subsequent postgraduate programme, he studied Computational Science and Engineering at Technical University of Munich. In continuation to his Master's thesis on “3D Deformable Surface Recovery Using RGBD Cameras”, he focused his research and development on large object detection, pose estimation and reconstruction using point clouds. Tolga is awarded both Ernst von Siemens Scholarship and EMVA Young Professional Award 2016 for his PhD work. He has several publications at the well respected venues such as NeurIPS, CVPR, ICCV, ECCV, IROS, ICASSP and 3DV. Aside from his academic life, Tolga is involved in entrepreneurship having co-founded multiple companies including Befunky, a widely used web based image processing platform.
+												</p>
+                                                <h4><b>Abstract</b></h4>
+                                                <p>In this tutorial, we first introduce the fundamentals of cycle-consistency and review the broad range of studies that make use of it. Next, we cover different techniques for solving multiview synchronization problems in computer vision, or in other words for achieving cycle consistency. Several techniques including graph theory, combinatorial optimization, Riemannian geometry, spectral decomposition, (non-)convex optimization, and MAP inference will be addressed. Besides optimization techniques, we will also discuss the uncertainty and ambiguities inherent either in the data or in the model and show how the existing tools can be augmented to yield this valuable piece of information. We will finally showcase the applications of synchronizing linear/non-linear maps. Tools and methods presented in this tutorial are beneficial to a large audience as the synchronization is a common technique across several sub-fields of computer vision.</p>
+											     <h4><b>Tutorial Content</b></h4>
+                                                <div class="vidstyle"><iframe width='500' height='294' src="https://www.youtube.com/embed/BoFzJOjCd48?&theme=dark&autohide=2&modestbranding=1&vq=hd720&allowfullscreen"frameborder="0" allowfullscreen></iframe></div>
+                                                <div id="slidesTolga" class="pdfobject-container">
+                                                    <script src="/js/pdfobject.min.js"></script>
+                                                    <script>PDFObject.embed("../downloads/slides_Tolga.pdf", "#slidesTolga");</script>
+                                                </div>
+												<div class="schedule-speaker-list">
+													<b>Tutor:</b>
+													<div class="schedule-speaker">
+														<img src="images/organizers/tolga-birdal.jpg" alt="Tolga Birdal">
+														<h4>Tolga Birdal</h4>
+													</div>
+												</div>
+											</div>
+										</li>
+                                        <li>
+											<a class="accordion-heading">
+												<span class="schedule-time accent">
+													02<sup>10</sup>pm
+												</span>
+												<div class="schedule-speaker">
+													<img src="images/organizers/qixing-huang.jpg" alt="Qixing Huang">
+												</div>
+												<h4 class="accordion-title"><b>Qixing Huang</b>: Session on Theoretical Aspects</h4>
+											</a>
+											<div class="accordion-body">
+												<p>
+													Qixing Huang is an assistant professor of Computer Science at the University of Texas at Austin. He obtained his PhD in Computer Science from Stanford University. He was a research assistant professor at Toyota Technological Institute at Chicago before joining UT Austin. Dr. Huang's research spans the fields of computer vision, computer graphics, and machine learning, and publishes extensively in venues such as SIGGRAPH, CVPR, ICCV, ECCV, NeuriPS, ICML, and etc. In particular, his recent focus is on developing machine learning algorithms (particularly deep learning) that leverage Big Data to solve core problems in computer vision, computer graphics and computational biology. He is also interested in statistical data analysis, compressive sensing, low-rank matrix recovery, and large-scale optimization, which provides theoretical foundation for his research. He also received the best paper award at the Symposium on Geometry Processing 2013, the best dataset award at the Symposium on Geometry Processing 2018, and the most cited paper award of Computer-Aided Geometric Design in 2010 and 2011. He was an area chair for CVPR 2019 and CVPR 2020.	
+												</p>
+												<h4><b>Abstract</b></h4>
+												<p>A fundamental problem in synchronization is to develop efficient computational formulations for the combinatorial constraints, including the cycle-consistency constraint for undirected graphs and the path-invariance constraint for directed graphs. This talk discusses advances on this topic during the past two decades, from greedy combinatorial approaches, constrained matrix recovery formulations, to very recent methods that utilize cycle-consistency bases and path-invariance bases joint learning of neural networks. We focus on the interplay between continuous optimization and graph theoretical approaches, exact and robust recovery conditions, and connections between synchronization and symmetries. We conclude the talk with a list of future directions.</p>
+                                                <div class="vidstyle"><iframe width='500' height='294' src="https://www.youtube.com/embed/IYw2fomjxYk?&theme=dark&autohide=2&modestbranding=1&vq=hd720"frameborder="0" allowfullscreen></iframe></div>
+                                                <b></b>
+                                                <div id="slidesQixing" class="pdfobject-container">
+                                                    <script src="/js/pdfobject.min.js"></script>
+                                                    <script>PDFObject.embed("../downloads/slides_Qixing.pdf", "#slidesQixing");</script>
+                                                </div>
+												<div class="schedule-speaker-list">
+													<b>Tutor:</b>
+													<div class="schedule-speaker">
+														<img src="images/organizers/qixing-huang.jpg" alt="Qixing Huang">
+														<h4>Qixing Huang</h4>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a class="accordion-heading">
+												<span class="schedule-time accent">
+													03<sup>05</sup>pm
+												</span>
+												<div class="schedule-speaker">
+													<img src="images/organizers/federica-arrigoni.jpg" alt="Federica Arrigoni">
+												</div>
+												<h4 class="accordion-title"><b>Federica Arrigoni</b>: Synchronization and Cycle-Consistency: Application to Motion Segmentation and Localization</h4>
+											</a>
+											<div class="accordion-body">
+												<p>
+													Federica Arrigoni received her MS degree in Mathematics from the University of Milan (Italy) in 2013, and the PhD degree in Industrial and Information Engineering from the University of Udine (Italy) in 2018. Her PhD thesis titled “Synchronization Problems in Computer Vision” was awarded from the Italian Association for Computer Vision, Pattern Recognition and Machine Learning (CVPL) in 2018 and from the University of Udine in 2019. From 2018 to 2020 she was a postdoctoral researcher with the Czech Institute of Informatics, Robotics, and Cybernetics (CIIRC) of the Czech Technical University in Prague. She is currently an assistant professor with the Department of Information Engineering and Computer Science of the University of Trento (Italy). Her research focuses on geometric problems in computer vision, including structure from motion, 3D registration, multi-image matching and motion segmentation.
+												</p>
+												<h4><b>Abstract</b></h4>
+												<p>
+												The “synchronization” problem is traditionally defined as the task of recovering unknown group elements (represented as nodes in a graph) starting from a set of pairwise ratios/differences (represented as edges in a graph). Particularly interesting is the case where the group admits a matrix representation (e.g., rotations/rigid-motions/permutations), where the unknown elements can be recovered via spectral decomposition. The spectral solution is very general and can be also applied to situations where the group structure is missing, such as the case of binary matrices, which appear in the context of motion segmentation.
+A tightly related problem is “bearing-based localization”, where the task is to compute the position of nodes in a graph starting from a set of pairwise directions. Recovering camera positions in a structure-from-motion system is an instance of bearing-based localization in 3D. This problem is well posed when the underlying graph is “parallel rigid”. An interesting formulation of localizability can be found by imposing “cycle-consistency”, namely the property that the sum of pairwise directions (weighted with unknown scales) along any cycle in the graph is zero.
+												</p>
+                                                <h4><b>Tutorial Content</b></h4>
+                                                    <div class="vidstyle"><iframe width='500' height='294' src="https://www.youtube.com/embed/cJhsteTyO7A?&theme=dark&autohide=2&modestbranding=1&vq=hd720"frameborder="0" allowfullscreen></iframe></div><div style='font-size: 0.8em'></div>
+                                                <b></b>
+                                                <div id="slidesFederica" class="pdfobject-container">
+                                                    <script src="/js/pdfobject.min.js"></script>
+                                                    <script>PDFObject.embed("../downloads/slides_Federica.pdf", "#slidesFederica");</script>
+                                                </div>
+                                                
+												<div class="schedule-speaker-list">
+													<b>Tutors:</b>
+													<div class="schedule-speaker">
+														<img src="images/organizers/federica-arrigoni.jpg" alt="Federica Arrigoni">
+														<h4>Federica Arrigoni</h4>
+													</div>
+												</div>
+											</div>
+										</li>
+                                        
+                                        <li>
+											<a class="accordion-heading">
+												<span class="schedule-time accent">
+													04<sup>00</sup>pm
+												</span>
+												<div class="schedule-speaker">
+													<img src="images/organizers/leonidas-guibas.jpg" alt="Leonidas Guibas">
+												</div>
+												<h4 class="accordion-title"><b>Leonidas Guibas</b>: Functional Map Synchronization and Applications</h4>
+											</a>
+											<div class="accordion-body">
+												<p>
+													Leonidas Guibas is the Paul Pigott Professor of Computer Science (and by courtesy, Electrical Engineering) at Stanford University, where he heads the Geometric Computation group.  Dr. Guibas obtained his Ph.D. from Stanford University  under the supervision of Donald Knuth. His main subsequent employers were Xerox PARC, DEC/SRC, MIT, and Stanford. He is a member and past acting director of the Stanford Artificial Intelligence Laboratory and a member of the Computer Graphics Laboratory, the Institute for Computational and Mathematical Engineering (iCME) and the Bio-X program. Dr. Guibas has been elected to the US National Academy of Engineering and the American Academy of Arts and Sciences, and is an ACM Fellow, an IEEE Fellow and winner of the ACM Allen Newell award and the ICCV Helmholtz prize. He is also a recent recipient of a five-year DoD Vannevar Bush Faculty Fellowship.
+												</p>
+												<h4><b>Abstract</b></h4>
+												<p>This presentation will introduce the machinery of functional maps between images or between 3D shapes. Traditional maps are pixel-to-pixel or point-to-point maps -- while functional maps are generalizations, mapping between function spaces defined over images or over 3D shapes and containing the former as special cases. As such, they are dual objects but come with two key advantages: (1) they are always linear mappings, allowing us to use many powerful tools from linear algebra and optimization, and (2), they enable us to express complex mappings compactly through the use of hierarchical function bases on the underlying objects. Fundamentally, functional maps act as information transporters -- since many important semantic properties of images or shapes, such as features or parts, can be encoded as functions.
 
-<h2>Funding</h2>
-    ...
+When we have many related images or 3D shapes connected via functional maps into a network, we can explore the consistency of information transport by following different paths in the network. Consistent functional maps are said to be synchronized. We describe algebraic conditions for synchronization and algorithms that can take noisy initial maps and improve their consistency -- and in the process also improve their quality in transferring semantic knowledge. We show a detailed example for the case of the image or 3D shape co-segmentation problem. We also describe applications to understanding shape differences and the analysis of shape collections.</p>
+                                                <h4><b>Tutorial Content</b></h4>
+                                                <div class="vidstyle"><iframe width='500' height='294' src="https://www.youtube.com/embed/S2FsWSEBnw8?&theme=dark&autohide=2&modestbranding=1&vq=hd720&allowfullscreen"frameborder="0" allowfullscreen></iframe></div>
+                                                <b></b>
+                                                <div id="slidesLeo" class="pdfobject-container">
+                                                    <script src="/js/pdfobject.min.js"></script>
+                                                    <script>PDFObject.embed("../downloads/slides_Leo.pdf", "#slidesLeo");</script>
+                                                </div>
+												<div class="schedule-speaker-list">
+													<b>Tutor:</b>
+													<div class="schedule-speaker">
+														<img src="images/organizers/leonidas-guibas.jpg" alt="Leonidas Guibas">
+														<h4>Leonidas Guibas</h4>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                
+                
+			</section>
+			<!--==========-->
+            
+            <section id="location" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+				<div class="row">
+					<div class="col-sm-12 col-md-8">
+						<h2>This is a virtual tutorial of CVPR 2020:</h2>
+						<ul class="contact">
+							<li class="contact-info">
+								<em class="fa fa-external-link"></em>
+								<span><a href="http://cvpr2020.thecvf.com/program/tutorials">CVPR 2020 Tutorial Website</a></span>
+							</li>
+                            <li class="contact-info">
+								<em class="fa fa-external-link"></em>
+								<span><a href="http://cvpr2020.thecvf.com/">CVPR 2020</a></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-<h2>Interested in Collaborating with Us?</h2>
-    We would like this project to evolve towards a repository of methods for handling challenging (3D) computer vision problems using Quantum computers. Therefore, we look for contributors and collaborators with great coding and mathematical skills as well as good knowledge in 3D vision, machine learning and quantum computation. If you are interested please send an e-mail to <strong>workshop@jackml.com (we can change this for something shared or I can forward this to everyone)</strong>.
 
-    
-</article>
+
+			<!--===============================-->
+			<!--== Footer =====================-->
+			<!--===============================-->
+			<footer id="footer" class="footer">
+				<div class="row">
+					<div class="col-sm-8">
+
+						<!--== Social Icons ==-->
+						<!--<ul class="social-icons">
+							<li><a href="#" class="fa fa-facebook"></a></li>
+							<li><a href="#" class="fa fa-twitter"></a></li>
+							<li><a href="#" class="fa fa-youtube"></a></li>
+							<li><a href="#" class="fa fa-linkedin"></a></li>
+						</ul>
+-->
+					</div>
+					<div class="col-sm-4 text-right">
+						<div class="copyrights">All Rights Reserved. © 2020 </div>
+					</div>
+				</div>
+			</footer>
+			<!--==========-->
+
+		</div>
+-->
+
+		<!--== Javascript Files ==-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_2muaLDbTKdh_ou9fkj8VjaWrFNgVBt0"></script>
+		<script src="js/jquery-2.1.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/SmoothScroll.min.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/jquery.nav.js"></script>
+		<script src="js/jquery.stellar.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+		<script src="js/jquery.accordion.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/fancySelect.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script src="js/gmap3.min.js"></script>
+		<script src="js/main.min.js"></script>
+        <script src="js/pdfobject.min.js"></script>
+	</body>
+</html>
