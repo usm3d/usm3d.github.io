@@ -2,7 +2,7 @@
     "use strict";
 
     var venueAddress = "The Seattle Convention Center - Seattle, WA", // Venue Address
-        eventInfo = ["Jun 17-18, 2024", "..."]; // Event Info
+        eventInfo = ["Jun 17, 2024", "..."]; // Event Info
 
     var fn = {
 
