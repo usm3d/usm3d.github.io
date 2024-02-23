@@ -24,7 +24,7 @@
 
 		<!--== CSS Files ==-->
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="css/style.min.css" rel="stylesheet" media="screen">
+		<link href="css/style.css" rel="stylesheet" media="screen">
 		<link href="css/animate.min.css" rel="stylesheet" media="screen">
 		<link href="css/font-awesome.css" rel="stylesheet" media="screen">
 		<link href="css/flexslider.css" rel="stylesheet" media="screen">
@@ -106,7 +106,7 @@
 								<li><a href="#challenge">Challenges</a></li>
 								<li><a href="#speakers">Keynotes</a></li>
 								<li><a href="#organizers">Organizers</a></li>
-								<li><a href="#program_committee">Program Committee</a></li>
+								<li><a href="#programcommittee">Program Committee</a></li>
 								<li><a href="#location">Location</a></li>
 							</ul>
 						</div>
@@ -324,7 +324,7 @@ graphics. We also solicit original contributions in the areas related to urban s
 							<img src="images/organizers/ruisheng-wang.jpg" alt="Ruisheng Wang">
 							<div class="speaker-info">
 								<h3>Ruisheng <br> <b>Wang</b></h3>
-								<p>Professor<br>Shenzhen University &<br/> University of Calgary &nbsp;</p>
+								<p>Professor<br>University of Calgary / Shenzhen University</p>
 							</div>
 							<ul class="speaker-contacts">
                                 <li><a target="_blank" href="https://profiles.ucalgary.ca/ruisheng-wang" class="fa fa-home"></a></li>
@@ -517,7 +517,7 @@ graphics. We also solicit original contributions in the areas related to urban s
 				</div>
 			</section>
 
-			<section id="program_committee" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
+			<section id="programcommittee" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="section-header text-center">
@@ -526,63 +526,154 @@ graphics. We also solicit original contributions in the areas related to urban s
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-sm-4">
+
+				<div class="row align-items-center mx-auto" style="margin: auto; padding: auto;">
+					<!-- <div class="col-sm-1 col-md-1"> </div> -->
+					<style>
+						.table th {
+							padding: 0 5rem;
+						}
+						.table td {
+							font-size: 1.1rem;
+							padding: 0 2rem;
+							margin: 0;
+						}
+	
+					</style>
+					
+					<div class="col-sm-11 col-md-6 align-items-center">
 						<table class="table table-borderless">
 							<thead>
-							<tr>
-								<th scope="col"><strong style="color: black">Name</strong></th>
-							</tr>
+								<tr style="text-align: right;">
+								  <th>Name</th>
+								  <th>Affiliation</th>
+								</tr>
 							</thead>
 							<tbody>
-							<tr><td>Bo Yang</td></tr>
-							<tr><td>Chenglu Wen</td></tr>
-							<tr><td>Daniela CABIDDU</td></tr>
-							<tr><td>Daniel G. Aliaga</td></tr>
-							<tr><td>George Vosselman</td></tr>
-							<tr><td>Gunho Sohn</td></tr>
-							<tr><td>Hongchao Fan</td></tr>
-							<tr><td>Ioannis Stamos</td></tr>
-							<tr><td>Jun Wang</td></tr>
-							<tr><td>Liangliang Nan</td></tr>
-							<tr><td>Loic Landrieu</td></tr>
-							<tr><td>Michael Ying Yang</td></tr>
-							<tr><td>Philippos Mordohai</td></tr>
-							<tr><td>Qingyong Hu</td></tr>
-							<tr><td>Rongjun Qin</td></tr>
-							<tr><td>Wei Yao</td></tr>
-							<tr><td>Yiping Chen</td></tr>
-
+							<tr>
+								<td>Daniel G. Aliaga</td>
+								<td>Purdue University</td>
+							</tr>
+							<tr>
+								<td>Daniela Cabiddu</td>
+								<td>CNR - Istituto di Matematica Applicata e Tecnologie Informatiche (IMATI)</td>
+							</tr>
+							<tr>
+								<td>Yiping Chen</td>
+								<td>Sun Yat-Sen University</td>
+							</tr>
+							<tr>
+								<td>Ian Endres</td>
+								<td>Hover Inc.</td>
+							</tr>
+							<tr>
+								<td>Hongchao Fan</td>
+								<td>Norwegian University of Science and Technology</td>
+							</tr>
+							<tr>
+								<td>Antoine Guédon</td>
+								<td>École Des Ponts Paristech</td>
+							</tr>
+							<tr>
+								<td>Liu He</td>
+								<td>Purdue University</td>
+							</tr>
+							<tr>
+								<td>Qingyong Hu</td>
+								<td>National University of Defense Technology</td>
+							</tr>
+							<tr>
+								<td>Yuzhong Huang</td>
+								<td>Hover Inc. / USC Information Sciences Institute</td>
+							</tr>
+							<tr>
+								<td>Loic Landrieu</td>
+								<td>Ecole des Ponts ParisTech</td>
+							</tr>
+							<tr>
+								<td>David Marx</td>
+								<td>CoreWeave, EleutherAI</td>
+							</tr>
+							<tr>
+								<td>Philippos Mordohai</td>
+								<td>Stevens Institute of Technology</td>
+							</tr>
 							</tbody>
 						</table>
 					</div>
-					<div class="col-sm-6">
+
+					<div class="col-sm-11 col-md-6">
 						<table class="table table-borderless">
 							<thead>
+								<tr style="text-align: right;">
+									<th>Name</th>
+									<th>Affiliation</th>
+								</tr>
+							</thead>
+							<tbody>
 							<tr>
+								<td>Liangliang Nan</td>
+								<td>Delft University of Technology</td>
+							</tr>
+							<tr>
+								<td>Rongjun Qin</td>
+								<td>The Ohio State University</td>
+							</tr>
+							<tr>
+								<td>Ziming Qui</td>
+								<td>NYU / Lowe's</td>
+							</tr>
+							<tr>
+								<td>Gunho Sohn</td>
+								<td>York University</td>
+							</tr>
+							<tr>
+								<td>Ioannis Stamos</td>
+								<td>City University of New York</td>
+							</tr>
+							<tr>
+								<td>Gábor Sörös</td>
+								<td>Bell Labs</td>
+							</tr>
+							<tr>
+								<td>George Vosselman</td>
+								<td>University of Twente</td>
+							</tr>
+							<tr>
+								<td>Jun Wang</td>
+								<td>Nanjing University of Aeronautics and Astronautics</td>
+							</tr>
+							<tr>
+								<td>Chenglu Wen</td>
+								<td>Xiamen University</td>
+							</tr>
+							<tr>
+								<td>Michael Ying Yang</td>
+								<td>University of Bath</td>
+							</tr>
+							<tr>
+								<td>Bo Yang</td>
+								<td>The Hong Kong Polytechnic University</td>
+							</tr>
+							<tr>
+								<td>Wei Yao</td>
+								<td>The Hong Kong Polytechnic University</td>
+							</tr>
+							</tbody>
+						</table>
+					
+
+						<!-- <table class="table table-borderless">
+							<thead>
+							<tr>
+								<th scope="col"><strong style="color: black">Name</strong></th>
 								<th scope="col"><strong style="color: black">Affiliation</strong></th>
 							</tr>
 							</thead>
 							<tbody>
-							<tr><td>The Hong Kong  Polytechnic University</td></tr>
-							<tr><td>Xiamen University</td></tr>
-							<tr><td>CNR - Istituto di Matematica Applicatae Tecnologie Informatiche</td></tr>
-							<tr><td>Purdue University</td></tr>
-							<tr><td>University of Twente</td></tr>
-							<tr><td>York University</td></tr>
-							<tr><td>Norwegian University of Science and Technology</td></tr>
-							<tr><td>City University of New York</td></tr>
-							<tr><td>Nanjing University of Aeronautics and Astronautics</td></tr>
-							<tr><td>Delft University of Technology</td></tr>
-							<tr><td>Ecole des Ponts ParisTech</td></tr>
-							<tr><td>University of Bath</td></tr>
-							<tr><td>Stevens Institute of Technology</td></tr>
-							<tr><td>National University of Defense Technology</td></tr>
-							<tr><td>The  Ohio State University</td></tr>
-							<tr><td>The Hong Kong  Polytechnic University</td></tr>
-							<tr><td> Sun Yat-Sen University</td></tr>
+								
 							</tbody>
-						</table>
+						</table> -->
 					</div>
 				</div>
 			</section>
@@ -628,7 +719,6 @@ graphics. We also solicit original contributions in the areas related to urban s
 			<!--==========-->
 
 		</div>
--->
 
 		<!--== Javascript Files ==-->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_2muaLDbTKdh_ou9fkj8VjaWrFNgVBt0"></script>

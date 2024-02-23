@@ -854,7 +854,9 @@ Speakers
 
 .speaker-info p {
 	margin: 5px 0 0 0;
-	font-size: 15px;
+	font-size: 1.5rem;
+	overflow: hidden; /* Hides text that overflows */
+    max-height: 12rem; /* 2 lines of text, adjust line-height * 2 */
 }
 
 .speaker-contacts {
