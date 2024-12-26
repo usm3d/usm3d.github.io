@@ -16,9 +16,9 @@
 
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="CVPR 2024  Workshop on Urban Scene Modeling: Where Vision Meets Photogrammetry and Graphics.">
-        <meta name="keywords" content="CVPR, Synchronization, Multiple Rotation Averaging, Cycle Consistency, Consistent Maps, 3D Reconstruction, Tutorial, CVPR Tutorial">
-        <meta name="author" content="Tolga Birdal">
+        <meta name="description" content="CVPR 2025 Workshop on Urban Scene Modeling: Where Vision Meets Photogrammetry and Graphics.">
+        <meta name="keywords" content="CVPR, Structured Reconstruction, 3D Reconstruction, CVPR Workshop, Urban Scene Modeling, Photogrammetry, Graphics, NeRF, SfM, SLAM, Gaussian Splatting, Radiance Fields">
+        <meta name="author" content="Jack Langerman et al.">
         <meta name="viewport" content="width=device-width, initial-scale=0.75">
         <meta http-equiv="Cache-control" content="public" max-age="86400">
 
@@ -52,6 +52,10 @@
 			th, td {
 				text-align: left;
 			}
+			#organizers .row {
+				display: flex;
+				justify-content: center;
+			}
 		</style>
 	</head>
 	<body>
@@ -66,8 +70,8 @@
 				<div class="container">
 					<div class="box">
 						<!--<h2w>Multiview Relationships in 3D Data<br/></h2w><h3w>In Conjunction with ICCV 2017<br/></h3w>-->
-                        <h2w>1st Workshop on Urban Scene Modeling: Where Vision Meets Photogrammetry and Graphics
-<br/></h2w><h2w>In Conjunction with CVPR 2024<br/></h2w>
+                        <h2w>2nd Workshop on Urban Scene Modeling: Where Vision Meets Photogrammetry and Graphics
+<br/></h2w><h2w>In Conjunction with CVPR 2025<br/></h2w>
 						<span class="typed"></span>
 					</div>
 				</div>
@@ -102,13 +106,9 @@
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="#home">Home</a></li>
                                 <li><a href="#news">News</a></li>
-								<li><a href="#challenge">Challenges</a></li>
-								<li><a href="#schedule">Schedule</a></li>
-								<li><a href="#speakers">Keynotes</a></li>
-                                <li><a href="#callforpapers">Accepted Papers</a></li>
+                                <li><a href="#callforpapers">Call for Papers</a></li>
 								<li><a href="#organizers">Organizers</a></li>
-								<li><a href="#programcommittee">Program Committee</a></li>
-								<!-- <li><a href="#location">Location</a></li> -->
+								<li><a href="./2024/index.html">Last Year</a></li>
 							</ul>
 						</div>
 
@@ -133,32 +133,26 @@
 					</div>
 					<div class="col-sm-12 col-md-7">
 						<!--<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
-                        <p style="text-align: justify;">Rapid urbanization poses social and environmental challenges. Addressing these issues
-effectively requires access to accurate and up-to-date 3D building models, obtained promptly and
-cost-effectively. Urban modeling is an interdisciplinary topic among computer vision, graphics,
-and photogrammetry. The demand for automated interpretation of scene geometry and semantics
-has surged due to various applications, including autonomous navigation, augmented reality,
-smart cities, and digital twins. As a result, substantial research effort has been dedicated to urban
-scene modeling within the computer vision and graphics communities, with a particular focus on
-photogrammetry, which has coped with urban modeling challenges for decades.
-This workshop is intended to bring researchers from these communities together. Through invited
-talks, spotlight presentations, a workshop challenge, and a poster session, it will increase
-interdisciplinary interaction and collaboration among photogrammetry, computer vision and
-graphics. We also solicit original contributions in the areas related to urban scene modeling. </p>
-					</div>
-					<div class="col-xs-3 col-md-2">
-						<div class="number wow bounceIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
-							<b class="accent">6</b>
-							Keynotes
-						</div>
-                        <div class="number wow bounceIn" data-wow-duration="0.8s" data-wow-delay="0.8s">
-							<b class="accent">Full</b>
-							Day Workshop
-						</div>
-						<div class="number wow bounceIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
-							<b class="accent">2</b>
-							Competition Tracks
-						</div>
+                        <p style="text-align: justify;">
+							3D reconstruction and modeling are central to modern computer vision, with rapid 
+							urbanization creating urgent social and environmental challenges that demand 
+							innovative solutions. While substantial progress has been made in reconstructing 
+							basic 3D structures from images and point clouds, the next frontier lies in advancing 
+							structured and semantic reconstruction—moving beyond low-level 3D information to 
+							produce high-level, parametric models that capture both the structure and semantics 
+							of human environments.
+						</p>
+						<p style="text-align: justify;"></p>
+							This workshop aims to bridge the gap between state-of-the-art 3D scene modeling and 
+							structured, semantic 3D reconstruction by bringing together researchers from 
+							photogrammetry, computer vision, generative models, learned representations, and 
+							computer graphics. Through invited talks, spotlight presentations, workshop challenges, 
+							and a poster session, we will foster interdisciplinary interaction and empower the next 
+							generation of 3D reconstruction technologies by integrating techniques from multi-view 
+							learning, geometric modeling, and machine perception. We welcome original contributions 
+							in structured reconstruction, learning-based approaches, and all areas related to urban 
+							scene modeling.
+						</p>
 					</div>
 				</div>
 			</section>
@@ -171,611 +165,49 @@ graphics. We also solicit original contributions in the areas related to urban s
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-8">
-						<p><span><b>May 31, 2024</b></span>: Building3D Challenge has completed! 🎉</p>
-						<p><span><b>March 15, 2024</b></span>: S23DR Challenge Competition Begins! 🎉</p>
-						<p><span><b>Feb 15, 2024</b></span>: Building3D Challenge Competition Begins! 🎉</p>
-						<p><span><b>Feb 8, 2024</b></span>: USM3D 2024 Call for Papers released! 🎉</p>
-						<p><span><b>Feb 7, 2024</b></span>: CVPR Workshop list released! 🎉</p>
-						<p><span><b>Feb 3, 2024</b></span>: We are live! 🎉</p>
+						<p><span><b>Jan 2, 2025</b></span>: Exciting news coming soon! 🎉</p>
+						<p><span><b>Dec 20, 2024</b></span>: Workshop is accepted for CVPR 2025 🎉</p>
 					</div>
 				</div>
 			</section>
 
-
-			<section id="challenge" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2><b>Challenges</b></h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-                    <div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<!-- <img src="images/logos/building3d.png" alt="S23DR Challenge!"> -->
-							<img src="images/s23dr_data.png" alt="S23DR Challenge!">
-							<div class="speaker-info">
-								<h3>S23DR <br> <b>Challenge!</b></h3>
-							</div>
-							<ul class="speaker-contacts">
-                                <li><a target="_blank" href="https://huggingface.co/spaces/usm3d/S23DR" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-9 ">
-						<h3><b>Structured Semantic 3D Reconstruction (S23DR) Challenge</b></h3>
-						<p><h3>🎉 2024 Challenge Winners 🎉</h3>
-							<ol>
-								<li><b>Denys Rozumnyi</b></li>
-								<li><b>Kunal Chelani</b></li>
-								<li><b>Kuo-Chin Lien</b></li>
-							</ol>
-							<b>Discretionary Awards</b>:
-							<ul>
-								<li>Weihang Li & Wenzhao Tang</li>
-								<li>Serhii Ivanov</li>
-							</ul>
-						</p>
-						<h3>Challenge Description</h3>
-						<p style="text-align: justify;">As part of this workshop, we are hosting the
-							<b><a target="_blank" href="https://huggingface.co/spaces/usm3d/S23DR">S23DR challenge</a></b>.
-							What's next after Structure from Motion?
-							
-							The objective of this competition is to facilitate the development of methods for transforming posed images (sometimes also called "oriented images") / SfM outputs into a structured geometric representation (wire frame) from which semantically meaningful measurements can be extracted.
-							
-							In short: More Structured Structure from Motion.
-						</p>
-						<p style="text-align: justify;">
-							In conjunction with the challenge, we release a new dataset: the <b><a href="https://huggingface.co/datasets/usm3d/hoho-train-set">HoHo Dataset</a></b>.
-							These data were gathered over the course of several years throughout the United States from a variety of smart phone and camera platforms. Each training sample/scene consists of a set of posed image features (segmentation, depth, etc.) and a sparse point cloud as input, and a sparse wire frame (3D embedded graph) with semantically tagged edges as the target. Additionally a mesh with semantically tagged faces is provided for each scene durning training. In order to preserve privacy, original images are not provided.
-						</p>
-						<h3><b>Awards & Submissions</b></h3>
-						<p style="text-align: justify;">
-							The winning submission will receive a cash prize provided by the workshop sponsor and the selected
-							finalists will be invited to present their research in the workshop. In order to be eligible for the
-							prizes teams must follow all the rules, provide a write-up detailing their solution in a submission to the workshop, in the form of <b>an extended abstract (4 pages) or a full paper (8 pages)</b>, as well as all artifacts code, weights, etc., required to generate a winning submission under CC-BY4.0 license</b>.
-						</p>
-						<!-- <h4>There is a <b>$ 25,000</b> prize pool for this challenge.</h4> -->
-						<p style="text-align: justify;">There is a <b>$ 25,000</b> prize pool for this challenge.</p>
-						<ul>
-							<li>1st Place: <b>$10,000</b></li>
-							<li>2nd Place: <b>$7,000</b></li>
-							<li>3rd Place: <b>$5,000</b></li>
-							<li>Additional Prizes: <b>$3,000</b></li>
-						</ul>
-						<p style="text-align: justify;">Please see the <a href="https://usm3d.github.io/S23DR/s23dr_rules.html">Competition Rules</a> for additional information.</p>
-						<p style="text-align: justify;">We thank <a href="https://www.hover.to/">Hover Inc.</a> for their generous sponsorship of this competition</p>
-						<h3><b>Important Dates</b></h3>
-						<table style="width:30em">
-							<tr>
-								<th>March 14, 2024</th>
-								<td>Competition starts</td>
-							</tr>
-							<tr>
-								<th>June 4, 2024</th>
-								<td>Entry Deadline</td>
-							</tr>
-							<tr>
-								<th>June 4, 2024</th>
-								<td>Team Merging</td>
-							</tr>
-							<tr>
-								<th>June 10, 2024</th>
-								<td>Competition ends</td>
-							</tr>
-							<tr>
-								<th>June 13, 2024</th>
-								<td>Writeup Deadline</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-				<div class="row"><p>-</p></div>
-				<div class="row">
-                    <div class="col-sm-6 col-md-3 ">
-						<br>
-						<div class="speaker">
-							<img src="images/logos/hf.png" alt="Building3D Challenge!">
-							<div class="speaker-info">
-								<h3>Building3D <br> <b>Challenge!</b></h3>
-							</div>
-							<ul class="speaker-contacts">
-                                <li><a target="_blank" href="https://huggingface.co/spaces/Building3D/USM3D" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-9 ">
-						<h3><b>Building3D Challenge</b></h3>
-						<p><h3>🎉 2024 Challenge Winners 🎉</h3>
-							<ol>
-								<li><b>Yuzhou Liu, Lingjie Zhu, Hanqiao Ye, Xiang Gao, Shuhan Shen</b></li>
-								<li><b>Hongxin Yang, Siyu Chen, YuJun Liu</b></li>
-								<li>
-									<ul>
-										<li><b>Jiahao Zhang, Qi Liu, Yuchao Dai, Le Hui, Zhixiang Pei</b></li>
-										<li><b>Hongye Hou, Fangyu Du, Jiaxin Ren, Yuxuan Jiang, Xiaobin Zhai</b></li>
-									</ul>
-								</li>
-							</ol>
-							<b>Honerable Mention</b>:
-							Fuhai Sun, Yingliang Zhang, Qiaoqiao Hao, Ting Han Duxin Zhu, Wenjing Wu, Tianrui Bayles-Rea, Guang Gao
-						</p>
-						<p style="text-align: justify;">As part of this workshop, we are hosting the
-							<b><a target="_blank" href="https://huggingface.co/spaces/Building3D/USM3D">Building3D challenge</a></b>.
-							 Building3D is an urban-scale publicly available dataset consisting of more than 160 thousand buildings
-							with corresponding point clouds, meshes, and wireframe models covering 16 cities in Estonia. For this challenge,
-							approximately 36, 000 buildings from the city of Tallinn are used as the training and testing dataset. Among them
-							, we selected 6000 relatively dense and structurally simple buildings as the Entry-level dataset. The wireframe
-							model is composed of points and edges representing shape and outline of the object. We require algorithms to take
-							the original point cloud as input and regress the wireframe model. For the evaluation, the metrics of mean
-							precision and recall are employed to evaluate accuracy of both points and edges, and overall offset of the
-							model is calculated. Additionally, the wireframe edit distance (WED) is used as an additional metric to
-							evaluate the accuracy of generated wireframe models.
-						</p>
-						<h3><b>Awards & Submissions</b></h3>
-						<p style="text-align: justify;">
-							The winning submission will receive a cash prize provided by the workshop sponsor and the chosen
-							finalists will be invited to present their research in the workshop. The prerequisite to receive
-							a money prize is to provide a write-up detailing their solution by a submission to the workshop,
-							in the form of <b>an extended abstract (4 pages) or a full paper (8 pages)</b>, as well as <b>the code
-							required to generate a winning submission under CC BY4.0 license</b>.
-						</p>
-						<p>We thank <a href="https://www.popsmart.cn/">PopSmart Inc.</a> for their generous sponsorship of this competition.</p>
-						<h3><b>Important Dates</b></h3>
-						<p style="text-align: justify;">
-							Feb 15 2024, Th: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Competition starts<br>
-							May 31 2024, Fri: &nbsp;&nbsp;&nbsp;&nbsp; Competition ends<br>
-							June 7 2024,  Fri: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Notification to Participants<br>
-							June 11 2024,  Tu: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Writeup Deadline<br>
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<!--===============================-->
-			<!--========== Schedule ===========-->
-			<!--===============================-->
-			<section id="schedule" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2><b>Schedule</b></h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-				  <div class="col-sm-12">
-					<div class="content-tabs">
-					  <div class="tab-content">
-						<div class="tab-pane fade in active" id="tab1">
-						  <ul class="accordion">
-							<li>
-							  <a class="accordion-heading">
-								<span class="schedule-time accent">09:00<sup>am</sup> - 09:10<sup>am</sup></span>
-								<h4 class="accordion-title"><b>Welcome and introduction</b></h4>
-							  </a>
-							</li>
-							<li>
-								<a class="accordion-heading">
-								  <span class="schedule-time accent">09:10<sup>am</sup> - 09:50<sup>am</sup></span>
-								  <h4 class="accordion-title"><b>Iro Armeni</b>: Keynote 1 <br>Building a Global Resource Cadastre</h4>
-								</a>
-								<div class="accordion-body col-sm-12">
-								  <img src="images/speakers/iro-armeni.webp" alt="Iro Armeni" class="col-sm-3" style="padding-top: 1em">
-								  <div class="speaker-info2 col-sm-8">
-									<h3>Iro <b>Armeni</b></h3>
-									<p>Iro Armeni is an assistant professor at the Department of Civil and Environmental
-									  Engineering, Stanford University, leading the Gradient Spaces group. She is 
-									  interested in interdisciplinary research spanning Architecture, Civil Engineering, 
-									  and Machine Perception. Her focus is on developing quantitative and 
-									  data-driven methods that learn from real-world visual data to generate, predict, 
-									  and simulate new or renewed built environments that place the human in the center. 
-									  Her goal is to create sustainable, inclusive, and adaptive built environments that 
-									  can support our current and future physical and digital needs.</p><br />
-								  </div>
-								</div>
-							</li>
-							<li>
-								<a class="accordion-heading">
-								  <span class="schedule-time accent">09:50<sup>am</sup> - 10:30<sup>am</sup></span>
-								  <h4 class="accordion-title"><b>Konrad Schindler</b>: Keynote 2 <br>Urban Modelling in the Deep Learning Age: from U-Nets to Next-Token Prediction</h4>
-								</a>
-								<div class="accordion-body col-sm-12">
-								  <img src="images/speakers/konrad-schindler.jpeg" alt="Konrad Schindler" class="col-sm-3" style="padding-top: 1em">
-								  <div class="speaker-info2 col-sm-8">
-									<h3>Konrad <b>Schindler</b></h3>
-									<p>Konrad Schindler received a Ph.D. degree from Graz University of 
-									  Technology (Austria) in 2003. He was a Photogrammetric Engineer in 
-									  the private industry and held research positions at Graz 
-									  University of Technology; Monash University (Melbourne, Australia) 
-									  and ETH Zürich (Switzerland). He was appointed Assistant Professor 
-									  of Image Understanding at TU Darmstadt (Germany) in 2009. Since 2010, 
-									  he has been a tenured Professor of Photogrammetry and Remote Sensing 
-									  at ETH Zürich. His research interests include remote sensing, 
-									  photogrammetry, computer vision, and machine learning.</p><br />
-								  </div>
-								</div>
-							  </li>
-							<li>
-							  <a class="accordion-heading">
-								<span class="schedule-time accent">10:30<sup>am</sup> - 11:20<sup>am</sup></span>
-								<h4 class="accordion-title"><b>Poster session & Social</b> (coffeebreak)</h4>
-							  </a>
-							</li>
-							<li>
-							  <a class="accordion-heading">
-								<span class="schedule-time accent">11:20<sup>am</sup> - 11:55<sup>am</sup></span>
-								<h4 class="accordion-title"><b>Building 3D Challenge</b></h4>
-							  </a>
-							</li>
-							<li>
-							  <a class="accordion-heading">
-								<span class="schedule-time accent">11:55<sup>am</sup> - 12:30<sup>pm</sup></span>
-								<h4 class="accordion-title"><b>S23DR Challenge</b></h4>
-							  </a>
-							</li>
-							<li>
-							  <a class="accordion-heading">
-								<span class="schedule-time accent">12:30<sup>pm</sup> - 13:30<sup>pm</sup></span>
-								<h4 class="accordion-title"><b>Lunch</b></h4>
-							  </a>
-							</li>
-							<li>
-								<a class="accordion-heading">
-								  <span class="schedule-time accent">13:30<sup>pm</sup> - 14:10<sup>pm</sup></span>
-								  <h4 class="accordion-title"><b>Thomas Funkhouser</b>: Keynote 3 <br>3D Foundation Features for Urban Environments</h4>
-								</a>
-								<div class="accordion-body col-sm-12">
-								  <img src="images/speakers/thomas-funkhouser.jpeg" alt="Thomas Funkhouser" class="col-sm-3" style="padding-top: 1em">
-								  <div class="speaker-info2 col-sm-8">
-									<h3>Thomas <b>Funkhouser</b></h3>
-									<p>Thomas Funkhouser, the David M. Siegel Professor of Computer Science, Emeritus at 
-										Princeton University. Prior to joining Princeton, he was a member of the 
-										technical staff at AT&T Bell Laboratories. Funkhouser's research focuses on 
-										computer graphics and vision, with interests in interactive graphics, acoustic modeling, 
-										multi-user systems, global illumination, and algorithms for managing large-scale 3D data. 
-										Funkhouser has contributed to multiple SIGGRAPH conferences and received honors including 
-										the ACM SIGGRAPH Computer Graphics Achievement Award (2014), Sloan Foundation Fellowship (1999), 
-										and National Science Foundation Career Award (2000).</p><br />
-								  </div>
-								</div>
-							</li>
-							<li>
-								<a class="accordion-heading">
-								  <span class="schedule-time accent">14:10<sup>pm</sup> - 14:50<sup>pm</sup></span>
-								  <h4 class="accordion-title"><b>Paper Spotlights</b></h4>
-								</a>
-								<ul class="accordion-body">
-									<li><b>AsymFormer</b>: <em>Asymmetrical Cross-Modal Representation Learning for Mobile Platform Real-Time RGB-D Semantic Segmentation</em><br>Siqi Du, Weixi Wang, Shengjun Tang, Ruisheng Wang, Renzhong Guo<br><span><em>Poster <b>#169</b></em></span></li>
-									<li><b>SimpliCity</b>: <em>Reconstructing Buildings with Simple Regularized 3D Models</em><br>Jean-Philippe Bauchet, Raphael Sulzer, Yuliya Tarabalka, Florent Lafarge<br><span><em>Poster <b>#170</b></em></span></li>
-									<li><b>ECLAIR</b>: <em>A High-Fidelity Aerial LiDAR Dataset for Semantic Segmentation</em><br>Iaroslav Melekhov, Anand C Umashankar, Hyeong-Jin E Kim, Vladislav Serkov, Dusty Argyle<br><span><em>Poster <b>#171</b></em></span></li>
-									<li><b>Point2Building</b>: <em>Reconstructing Buildings from airborne LiDAR Point Clouds</em><br>Yujia Liu, Anton Obukhov, Jan Dirk Wegner, Konrad Schindler<br><span><em>Poster <b>#172</b></em></span></li>
-									<li><b>uTRAND</b>: <em>Unsupervised Anomaly Detection in Traffic Trajectories</em><br>Giacomo D'Amicantonio, Egor Bondarev, P. H. N. de With<br><span><em>Poster <b>#173</b></em></span></li>
-									<li><b>OpenTrench3D</b>: <em>A Photogrammetric 3D Point Cloud Dataset for Semantic Segmentation of Underground Utilities</em><br>Lasse H Hansen, Simon Buus Jensen, Andreas Møgelmose, Mark Philip Philipsen, Lars Bodum, Thomas B. Moeslund<br><span><em>Poster <b>#174</b></em></span></li>
-									<li><b>DL3DV-10K</b>: <em>A Large-Scale Scene Dataset for Deep Learning-based 3D Vision</em><br>Lu Ling, Yicehn Sheng, Zhi Tu, Wentian Zhao, Xin Cheng, Kun Wan, Lantao Yu, Qianyu Guo, Zixun Yu, Yawen Lu, Xuanmao Li, Xingpeng Sun, Rohan Ashok, Aniruddha Mukherjee, Hao Kang, Xiangrui Kong, Gang Hua, Tianyi Zhang, Bedrich Benes, Aniket Bera<br><span><em>Poster <b>#175</b></em></span></li>
-								</ul>
-							  </li>
-							  <li>
-								<a class="accordion-heading">
-								  <span class="schedule-time accent">14:50<sup>pm</sup> - 15:30<sup>pm</sup></span>
-								  <h4 class="accordion-title"><b>Noah Snavely</b>: Keynote 4 <br>MegaScenes: Reconstructing All the World's Landmarks</h4>
-								</a>
-								<div class="accordion-body col-sm-12">
-								  <img src="images/speakers/noah-snavely.jpg" alt="Noah Snavely" class="col-sm-3" style="padding-top: 1em">
-								  <div class="speaker-info2 col-sm-8">
-									<h3>Noah <b>Snavely</b></h3>
-									<p>Noah Snavely is the Professor of Computer Science at Cornell Tech interested in computer vision and computer graphics,
-									  and a member of the Cornell Graphics and Vision Group. He also work at Google Research in NYC.
-									  His research interests are in computer vision and graphics, in particular in 3D understanding and depiction of scenes from images.
-									  He is an ACM Fellow, and the recipient of a PECASE, a Microsoft New Faculty Fellowship,
-									  an Alfred P. Sloan Fellowship, and the SIGGRAPH Significant New Researcher Award.</p><br />
-								  </div>
-								</div>
-							  </li>
-							<li>
-							  <a class="accordion-heading">
-								<span class="schedule-time accent">15:30<sup>pm</sup> - 16:20<sup>pm</sup></span>
-								<h4 class="accordion-title"><b>Poster session & Social</b> (coffeebreak)</h4>
-							  </a>
-							</li>
-							<li>
-								<a class="accordion-heading">
-								  <span class="schedule-time accent">16:20<sup>pm</sup> - 17:00<sup>pm</sup></span>
-								  <h4 class="accordion-title"><b>Richard Zhang</b>: Keynote 5 <br>Learning Differentiable Primitive Representations for CAD and Urban Modeling</h4>
-								</a>
-								<div class="accordion-body col-sm-12">
-								  <img src="images/speakers/richard-zhang.png" alt="Richard Zhang" class="col-sm-3" style="padding-top: 1em">
-								  <div class="speaker-info2 col-sm-8">
-									<h3>Richard <b>Zhang</b></h3>
-									<p>Hao (Richard) Zhang is a Distinguished Professor at Simon Fraser University,
-									  and an Amazon Scholar. He earned his Ph.D. from the University of Toronto, and
-									  MMath and BMath degrees from the University of Waterloo. His research is in
-									  visual computing with special interests in geometric modeling, shape analysis,
-									  3D vision, and geometric deep learning. Awards won by Richard include a
-									  Canadian Human-Computer Communications Society Achievement Award in
-									  Graphics, a Google Faculty Award, an NSERC Discovery Accelerator 
-									  Supplement Award, and IEEE Fellowship. He and his students have won the
-									  CVPR 2020 Best Student Paper Award and Best Paper Awards at Symposium
-									  on Geometry Processing 2008 and CAD/Graphics 2017. He has served as an
-									  editor-in-chief for Computer Graphics Forum and will be the Technical Papers
-									  Chair for SIGGRAPH 2025.</p><br />
-								  </div>
-								</div>
-							</li>
-							<li>
-								<a class="accordion-heading">
-								  <span class="schedule-time accent">17:00<sup>pm</sup> - 17:40<sup>pm</sup></span>
-								  <h4 class="accordion-title"><b>Yasutaka Furukawa</b>: Keynote 6 <br>Pushing the Frontiers of 3D Content Generation: Tales of very complex CAD models and very loose image conditioning</h4>
-								</a>
-								<div class="accordion-body col-sm-12">
-								  <img src="images/speakers/yasutaka-furukawa.jpeg" alt="Yasutaka Furukawa" class="col-sm-3" style="padding-top: 1em">
-								  <div class="speaker-info2 col-sm-8">
-									<h3>Yasutaka <b>Furukawa</b></h3>
-									<p>Yasutaka Furukawa, a principal scientist at Wayve and an associate 
-									  professor of Computing Science at Simon Fraser University, has 
-									  held positions as an assistant professor at Washington University 
-									  in St. Louis, a software engineer at Google, and a post-doctoral 
-									  research associate at UW, collaborating with Profs. Seitz, Curless, 
-									  and Rick Szeliski. He earned his Ph.D. under Prof. Ponce at the 
-									  University of Illinois at Urbana-Champaign. He has received 
-									  the PAMI Longuet-Higgins prize (2020), CS-CAN: Outstanding Young 
-									  CS Researcher Award (2018), NSF CAREER Award (2015), Best Student 
-									  Paper Award at ECCV 2012, and multiple Google Faculty Research 
-									  Awards (2018, 2017, 2016).</p><br />
-								  </div>
-								</div>
-							</li>
-							<li>
-							  <a class="accordion-heading">
-								<span class="schedule-time accent">17:40<sup>pm</sup> - 18:20<sup>pm</sup></span>
-								<h4 class="accordion-title"><b>Collaboration and Discussion Session</b> (≈interactive panel)</h4>
-							  </a>
-							</li>
-							<li>
-							  <a class="accordion-heading">
-								<span class="schedule-time accent">18:20<sup>pm</sup> - 18:30<sup>pm</sup></span>
-								<h4 class="accordion-title"><b>Closing</b></h4>
-							  </a>
-							</li>
-						  </ul>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
-			</section>
-
-			<section id="speakers" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2><b>Keynotes</b></h2>
-						</div>
-					</div>
-				</div>
-				<style>
-					.speaker2 {
-						/* padding: 2rem; */
-						width: 95%;
-					}
-					.speaker-info2 {
-						height: 50rem;
-						overflow-y: scroll;
-					}
-					.speaker-info2 p {
-						/* overflow: hidden; */
-					}
-					.speaker-contacts {
-						width: 95%;
-					}
-				</style>
-				<!-- ###################################### -->
-				<div class="row">
-                    <div class="col-sm-12 col-md-6  bg-dark">
-						<div class="speaker2">
-							<img src="images/speakers/iro-armeni.webp" alt="Iro Armeni">
-							<div class="speaker-info2">
-								<h3>Iro <b>Armeni</b></h3>
-								<p>Iro Armeni is an assistant professor at the Department of Civil and Environmental
-									Engineering, Stanford University, leading the Gradient Spaces group. She is 
-									interested in interdisciplinary research spanning Architecture, Civil Engineering, 
-									and Machine Perception. Her focus is on developing quantitative and 
-									data-driven methods that learn from real-world visual data to generate, predict, 
-									and simulate new or renewed built environments that place the human in the center. 
-									Her goal is to create sustainable, inclusive, and adaptive built environments that 
-									can support our current and future physical and digital needs.</p><br />
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-6  bg-dark">
-						<div class="speaker2">
-							<img src="images/speakers/konrad-schindler.jpeg" alt="Konrad Schindler">
-							<div class="speaker-info2">
-								<h3>Konrad <b>Schindler</b></h3>
-								<p>Konrad Schindler received a Ph.D. degree from Graz University of 
-									Technology (Austria) in 2003. He was a Photogrammetric Engineer in 
-									the private industry and held research positions at Graz 
-									University of Technology; Monash University (Melbourne, Australia) 
-									and ETH Zürich (Switzerland). He was appointed Assistant Professor 
-									of Image Understanding at TU Darmstadt (Germany) in 2009. Since 2010, 
-									he has been a tenured Professor of Photogrammetry and Remote Sensing 
-									at ETH Zürich. His research interests include remote sensing, 
-									photogrammetry, computer vision, and machine learning.</p><br />
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-                    <div class="col-sm-12 col-md-6  bg-dark">
-						<div class="speaker2">
-							<img src="images/speakers/yasutaka-furukawa.jpeg" alt="Yasutaka Furukawa">
-							<div class="speaker-info2">
-								<h3>Yasutaka <b>Furukawa</b></h3>
-								<p>Yasutaka Furukawa, a principal scientist at Wayve and an associate 
-									professor of Computing Science at Simon Fraser University, has 
-									held positions as an assistant professor at Washington University 
-									in St. Louis, a software engineer at Google, and a post-doctoral 
-									research associate at UW, collaborating with Profs. Seitz, Curless, 
-									and Rick Szeliski. He earned his Ph.D. under Prof. Ponce at the 
-									University of Illinois at Urbana-Champaign. He has received 
-									the PAMI Longuet-Higgins prize (2020), CS-CAN: Outstanding Young 
-									CS Researcher Award (2018), NSF CAREER Award (2015), Best Student 
-									Paper Award at ECCV 2012, and multiple Google Faculty Research 
-									Awards (2018, 2017, 2016).</p><br />
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-6  bg-dark">
-						<div class="speaker2">
-							<img src="images/speakers/richard-zhang.png" alt="Richard Zhang">
-							<div class="speaker-info2">
-								<h3>Richard <b>Zhang</b></h3>
-								<p>Hao (Richard) Zhang is a Distinguished Professor at Simon Fraser University,
-									and an Amazon Scholar. He earned his Ph.D. from the University of Toronto, and
-									MMath and BMath degrees from the University of Waterloo. His research is in
-									visual computing with special interests in geometric modeling, shape analysis,
-									3D vision, and geometric deep learning. Awards won by Richard include a
-									Canadian Human-Computer Communications Society Achievement Award in
-									Graphics, a Google Faculty Award, an NSERC Discovery Accelerator 
-									Supplement Award, and IEEE Fellowship. He and his students have won the
-									CVPR 2020 Best Student Paper Award and Best Paper Awards at Symposium
-									on Geometry Processing 2008 and CAD/Graphics 2017. He has served as an
-									editor-in-chief for Computer Graphics Forum and will be the Technical Papers
-									Chair for SIGGRAPH 2025.</p><br />
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-                    <div class="col-sm-12 col-md-6  bg-dark">
-						<div class="speaker2">
-							<img src="images/speakers/noah-snavely.jpg" alt="Noah Snavely">
-							<div class="speaker-info2">
-								<h3>Noah <b>Snavely</b></h3>
-								<p>Noah Snavely is the Professor of Computer Science at Cornell Tech interested in computer vision and computer graphics,
-									and a member of the Cornell Graphics and Vision Group. He also work at Google Research in NYC.
-									His research interests are in computer vision and graphics, in particular in 3D understanding and depiction of scenes from images.
-									He is an ACM Fellow, and the recipient of a PECASE, a Microsoft New Faculty Fellowship,
-									an Alfred P. Sloan Fellowship, and the SIGGRAPH Significant New Researcher Award.</p><br />
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-6  bg-dark">
-						<div class="speaker2">
-							<img src="images/speakers/thomas-funkhouser.jpeg" alt="Thomas Funkhouser">
-							<div class="speaker-info2">
-								<h3>Thomas <b>Funkhouser</b></h3>
-								<p>Thomas Funkhouser, the David M. Siegel Professor of Computer Science, 
-									Emeritus at Princeton University, received his B.S. from Stanford University,
-									M.S. from UCLA, and Ph.D. from UC Berkeley. Prior to joining Princeton, 
-									he was a member of the technical staff at AT&T Bell Laboratories. Funkhouser's 
-									research focuses on computer graphics and computer vision, with interests in 
-									interactive graphics, acoustic modeling, multi-user systems, global illumination, 
-									and algorithms for managing large-scale 3D data. He was a principal developer of 
-									the UC Berkeley Architectural Walkthrough System, which achieved real-time 
-									visualization of building models with millions of polygons. Funkhouser has 
-									contributed to multiple SIGGRAPH conferences and received honors including the 
-									ACM SIGGRAPH Computer Graphics Achievement Award (2014), Sloan Foundation 
-									Fellowship (1999), and National Science Foundation Career Award (2000).</p><br />
-							</div>
-						</div>
-					</div>
-				</div>	
-
-				<!-- ###################################### -->
-
-
-			</section>
 
 			<section id="callforpapers">
 				<div class="row">
-                    <div class="col-sm-12 col-md-3">
-						<div class="section-header text-left">
-							<h2><b>Accepted Papers</b></h2>
-						</div>
-					</div>
-					
-					<div class="col-sm-12 col-md-8">
-						<h4>In Proceedings</h4>
-						<!--
-							URLS:
-
-						-->
-						<ul>
-							<li><a href="https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.pdf"><b>AsymFormer</b>: <em>Asymmetrical Cross-Modal Representation Learning for Mobile Platform Real-Time RGB-D Semantic Segmentation</em></a><br>Siqi Du, Weixi Wang, Shengjun Tang, Ruisheng Wang, Renzhong Guo<br><span><em>Poster <b>#169</b></em></span></li>
-							<li><a href="https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Bauchet_SimpliCity_Reconstructing_Buildings_with_Simple_Regularized_3D_Models_CVPRW_2024_paper.pdf"><b>SimpliCity</b>: <em>Reconstructing Buildings with Simple Regularized 3D Models</em></a><br>Jean-Philippe Bauchet, Raphael Sulzer, Yuliya Tarabalka, Florent Lafarge<br><span><em>Poster <b>#170</b></em></span></li>
-							<li><a href="https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Melekhov_ECLAIR_A_High-Fidelity_Aerial_LiDAR_Dataset_for_Semantic_Segmentation_CVPRW_2024_paper.pdf"><b>ECLAIR</b>: <em>A High-Fidelity Aerial LiDAR Dataset for Semantic Segmentation</em></a><br>Iaroslav Melekhov, Anand C Umashankar, Hyeong-Jin E Kim, Vladislav Serkov, Dusty Argyle<br><span><em>Poster <b>#171</b></em></span></li>
-							<li><a href="https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Damicantonio_uTRAND_Unsupervised_Anomaly_Detection_in_Traffic_Trajectories_CVPRW_2024_paper.pdf"><b>uTRAND</b>: <em>Unsupervised Anomaly Detection in Traffic Trajectories</em></a><br>Giacomo D'Amicantonio, Egor Bondarev, P. H. N. de With<br><span><em>Poster <b>#173</b></em></span></li>
-							<li><a href="https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Hansen_OpenTrench3D_A_Photogrammetric_3D_Point_Cloud_Dataset_for_Semantic_Segmentation_CVPRW_2024_paper.pdf"><b>OpenTrench3D</b>: <em>A Photogrammetric 3D Point Cloud Dataset for Semantic Segmentation of Underground Utilities</em></a><br>Lasse H Hansen, Simon Buus Jensen, Andreas Møgelmose, Mark Philip Philipsen, Lars Bodum, Thomas B. Moeslund<br><span><em>Poster <b>#174</b></em></span></li>
-						</ul>
-						<h4>non-Proceedings</h4>
-						<ul>
-							<li><a href="https://arxiv.org/abs/2403.02136"><b>Point2Building</b>: <em>Reconstructing Buildings from airborne LiDAR Point Clouds</em></a><br>Yujia Liu, Anton Obukhov, Jan Dirk Wegner, Konrad Schindler<br><span><em>Poster <b>#172</b></em></span></li>
-							<li><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Ling_DL3DV-10K_A_Large-Scale_Scene_Dataset_for_Deep_Learning-based_3D_Vision_CVPR_2024_paper.html"><b>DL3DV-10K</b>: <em>A Large-Scale Scene Dataset for Deep Learning-based 3D Vision</em></a><br>Lu Ling, Yicehn Sheng, Zhi Tu, Wentian Zhao, Xin Cheng, Kun Wan, Lantao Yu, Qianyu Guo, Zixun Yu, Yawen Lu, Xuanmao Li, Xingpeng Sun, Rohan Ashok, Aniruddha Mukherjee, Hao Kang, Xiangrui Kong, Gang Hua, Tianyi Zhang, Bedrich Benes, Aniket Bera<br><span><em>Poster <b>#175</b></em></span></li>
-						</ul>
-						<a href="https://openaccess.thecvf.com/CVPR2024_workshops/USM">Open Access Paper Links</a>
-					</div>
-				</div>	
-				<div class="row">
-					<div class="col-sm-12 col-md-3">
-						<div class="section-header text-left">
+					<div class="col-sm-12">
+						<div class="section-header text-center">
 							<h2><b>Call for Papers</b></h2>
 						</div>
 					</div>
-					<div class="col-sm-12 col-md-8">
-						<h3>Important Dates</h3>
-						<h4>Papers (in proceedings)</h4>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-10 col-md-offset-1">
+						<p>We invite submissions of original research related to urban scene modeling. Topics of interest include, but are not limited to:</p>
 						<ul>
-							<li>Submission Deadline: March 24, 2024</li>
-							<li>Notification of Acceptance: April 9, 2024</li>
-							<li>Camera Ready Deadline: April 12, 2024</li>
+							<li>Structured 3D Reconstruction/Modeling of human environments, including indoor and outdoor spaces, from sparse, noisy, or partial point clouds and images</li>
+							<li>Semantic, Instance, and Panoptic Segmentation and Parsing of 3D point clouds and images in complex human-centered environments</li>
+							<li>Fusion of Images and Point Clouds to improve the accuracy, detail, and structure of human-centric 3D scene modeling</li>
+							<li>Structured Representation of 3D Scenes, including parametric (e.g., CAD, B-Rep, Wireframe, etc.) models for buildings, interiors, and other human-made structures</li>
+							<li>Neural Implicit Representations for efficient and scalable modeling of large human environments</li>
+							<li>Learning Priors for Structured 3D Modeling, focusing on generating plausible, real-world human environments with structural consistency</li>
+							<li>Generative Models for Occlusion-Free Image Generation, enabling realistic texture mapping and enhanced 3D model quality</li>
+							<li>Multiview 3D Matching and Registration techniques for capturing and integrating scans of complex human spaces</li>
+							<li>Pose Estimation and Structured 3D Recovery from sparse image sets, with applications in architecture, robotics, and other domains</li>
+							<li>Differentiable Rendering and Occlusion Reasoning in human environments, such as indoor spaces, cityscapes, and public infrastructure</li>
+							<li>Applications of Structured and Semantic 3D Reconstruction in smart cities, construction, autonomous navigation, and digital twins</li>
+							<li>Benchmarks and Datasets for large-scale 3D modeling of human environments, driving new challenges and setting the standard for the field</li>
 						</ul>
-						<!-- 
-						<h4>Extended Abstracts</h4>
-						<ul>
-							<li>Submission Deadline: TBD</li>
-							<li>Notification of Acceptance: TBD</li>
-							<li>Camera Ready Deadline: TBD</li>
-						</ul>
-						-->
-						<h5>========> <a target='_blank', href="https://cmt3.research.microsoft.com/USM3D2024">Submit Here</a> <========</h5>
+						<p>
+						We will accept submissions on two tracks: extended abstract submissions (up to 4 pages) and full papers (up to 8 pages) in the standard CVPR format. Accepted submissions will be presented as posters, and some will be selected for spotlight talks.
+						</p>
+						<p>
+						Paper submission deadline: March 24, 2025.
+						</p>
+						<p>
+						More details about the submission process will be announced soon.
+						</p>
 					</div>
-					<div class="col-sm-12 col-md-3"><!--spacer--></div>
-					<div class="col-sm-12 col-md-8">
-						<h3>Topics</h3>
-						<!--<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
-						The goal of this workshop is to push the frontier in urban scene modeling. Focal points for papers include but are not limited to:
-                        <!-- <ul style="list-style-type:none; text-align:left;"> -->
-                        <ul>
-							<li> Semantic/instance segmentation of 3D point clouds and images on urban scenes</li>
-							<li> Scene representation: Neural implicit scene representation, SDF, NeRF, Gaussian splats, mesh, CAD, etc.</li>
-							<li> 2.5D/3D reconstruction and modeling from remote sensing data (satellite images, LiDAR, etc.)</li>
-							<li> Generative models: Diffusion models and GANs for occlusion-free image and 3D scene generation</li>
-							<li> Meta learning for image/point cloud registration, segmentation, and modeling</li>
-							<li> Self-, weakly, and semi-supervised learning for urban scene modeling</li>
-							<li> Fusion of images, point clouds and other sensor data for urban scene modeling</li>
-							<li> Rendering and visualization of large-scale point clouds</li>
-							<li> Parametric reconstruction</li>
-							<li> 3D reconstruction and registration, joint registration and segmentation of images, matching multi view, pose estimation, deployment on mobile and embedded devices</li>
-							<li> Leveraging (learned) priors for structured/parametric 3D reconstruction from multimodal data</li>
-							<li> New datasets, and new labeling, and capturing methods for ground truth </li>
-							<li> Human-in-the-loop modeling and reconstruction</li>
-							<li> Methods to bridge traditional modeling tools with neural representations</li>
-							<li> Inverse and forward procedural modeling approaches for large scale scene generation</li>		
-							<li> Novel contributions on depth, panoramic, and other image representations for scene understanding, modeling, and reconstruction</li>		
-						</ul>
-						<b>We welcome PC self-nominations. If you're willing to review for the workshop, please reach out to us at 
-							<a href="mailto:usm3d@googlegroups.com?subject=PC Self Nomination">usm3d@googlegroups.com</a>.</b>
-					</div>
-                </div>
+				</div>
 			</section>
 
 			<section id="organizers" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
@@ -786,8 +218,8 @@ graphics. We also solicit original contributions in the areas related to urban s
 						</div>
 					</div>
 				</div>
-				<div class="row">
-                    <div class="col-sm-6 col-md-3 ">
+				<div class="row justify-content-center">
+					<div class="col-sm-6 col-md-3 ">
 						<div class="speaker">
 							<img src="images/organizers/ruisheng-wang.jpg" alt="Ruisheng Wang">
 							<div class="speaker-info">
@@ -804,14 +236,16 @@ graphics. We also solicit original contributions in the areas related to urban s
 							<img src="images/organizers/jack-langerman.png" alt="Jack Langerman">
 							<div class="speaker-info">
 								<h3>Jack<br> <b>Langerman</b></h3>
-								<p>Sr. Applied Scientist <br> HOVER Inc. <br/> &nbsp;</p>
+								<p>Applied Researcher <br>Apple<br/> </p>
 							</div>
 							<ul class="speaker-contacts">                                
                                 <li><a target="_blank" href="https://jackml.com" class="fa fa-home"></a></li>
 							</ul>
 						</div>
 					</div>	
-                    <div class="col-sm-6 col-md-3 ">
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-sm-6 col-md-3 ">
 						<div class="speaker">
 							<img src="images/organizers/ilke-demir.png" alt="Ilke Demir">
 							<div class="speaker-info">
@@ -825,39 +259,15 @@ graphics. We also solicit original contributions in the areas related to urban s
 					</div>
 					<div class="col-sm-6 col-md-3 ">
 						<div class="speaker">
-							<img src="images/organizers/qixing-huang.jpeg" alt="Qixing Huang">
+							<img src="https://dmytro.ai/photo.jpg" alt="Dmytro Mishkin">
 							<div class="speaker-info">
-								<h3>Qixing<br> <b>Huang</b></h3>
-								<p>Associate Professor<br>University of Texas at Austin</p>
+								<h3>Dmytro<br> <b>Mishkin</b></h3>
+								<p>Researcher<br>Czech Technical University in Prague</p>
 							</div>
 							<ul class="speaker-contacts">
-                                <li><a target="_blank" href="https://www.cs.utexas.edu/~huangqx" class="fa fa-home"></a></li>
+								<li><a target="_blank" href="https://dmytro.ai" class="fa fa-home"></a></li>
 							</ul>
 						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/florent-lafarge.png" alt="Florent Lafarge">
-							<div class="speaker-info">
-								<h3>Florent<br> <b>Lafarge</b></h3>
-								<p>Researcher<br>INRIA <br/> &nbsp;</p>
-							</div>
-							<ul class="speaker-contacts">
-                                <li><a target="_blank" href="https://www-sop.inria.fr/members/Florent.Lafarge/" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-						<div class="col-sm-6 col-md-3 ">
-							<div class="speaker">
-								<img src="https://dmytro.ai/photo.jpg" alt="Dmytro Mishkin">
-								<div class="speaker-info">
-									<h3>Dmytro<br> <b>Mishkin</b></h3>
-									<p>Researcher<br>Czech Technical University in Prague</p>
-								</div>
-								<ul class="speaker-contacts">
-									<li><a target="_blank" href="https://dmytro.ai" class="fa fa-home"></a></li>
-								</ul>
-							</div>
 					</div>
 					<div class="col-sm-6 col-md-3 ">
 						<div class="speaker">
@@ -871,6 +281,8 @@ graphics. We also solicit original contributions in the areas related to urban s
 							</ul>
 						</div>
 					</div>
+				</div>
+				<div class="row justify-content-center">
 					<div class="col-sm-6 col-md-3 ">
 						<div class="speaker">
 							<img src="images/organizers/hui-huang.jpeg" alt="Hui Huang">
@@ -894,19 +306,7 @@ graphics. We also solicit original contributions in the areas related to urban s
 								<li><a target="_blank" href="https://shangfenghuang.github.io" class="fa fa-home"></a></li>
 							</ul>
 						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/daoyi-gao.jpg" alt="Daoyi Gao">
-							<div class="speaker-info">
-								<h3>Daoyi<br> <b>Gao</b></h3>
-								<p>Researcher<br>Technical University of Munich</p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://daoyig.github.io" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>     
+					</div>   
 					<div class="col-sm-6 col-md-3 ">
 						<div class="speaker">
 							<img src="images/organizers/xiang-ma.png" alt="Xiang Ma">
@@ -918,19 +318,9 @@ graphics. We also solicit original contributions in the areas related to urban s
 								<li><a target="_blank" href="https://www.linkedin.com/in/seanxiangma/" class="fa fa-home"></a></li>
 							</ul>
 						</div>
-					</div>  
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/hanzhi-chen.png" alt="Hanzhi Chen">
-							<div class="speaker-info">
-								<h3>Hanzhi<br> <b>Chen</b></h3>
-								<p>Researcher<br>Technical University of Munich</p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://srl.cit.tum.de/members/chenh" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
+					</div> 
+				</div>
+				<div class="row justify-content-center">
 					<div class="col-sm-6 col-md-3 ">
 						<div class="speaker">
 							<img src="images/organizers/clement-mallet.jpeg" alt="Clement Mallet">
@@ -940,18 +330,6 @@ graphics. We also solicit original contributions in the areas related to urban s
 							</div>
 							<ul class="speaker-contacts">
 								<li><a target="_blank" href="https://www.umr-lastig.fr/clement-mallet/" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>  
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/caner-korkmaz.jpeg" alt="Caner Korkmaz">
-							<div class="speaker-info">
-								<h3>Caner<br> <b>Korkmaz</b></h3>
-								<p>Researcher<br>Imperial College London</p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://scholar.google.com/citations?user=zXYGSYgAAAAJ&hl=en" class="fa fa-home"></a></li>
 							</ul>
 						</div>
 					</div>  
@@ -985,187 +363,15 @@ graphics. We also solicit original contributions in the areas related to urban s
 				</div>
 			</section>
 
-			<section id="programcommittee" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2><b>Program Committee</b></h2>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="row align-items-center mx-auto" style="margin: auto; padding: auto;">
-					<!-- <div class="col-sm-1 col-md-1"> </div> -->
-					<style>
-						.table th {
-							padding: 0 5rem;
-						}
-						.table td {
-							font-size: 1.1rem;
-							padding: 0 2rem;
-							margin: 0;
-						}
-	
-					</style>
-					
-					<div class="col-sm-11 col-md-6 align-items-center">
-						<table class="table table-borderless">
-							<thead>
-								<tr style="text-align: right;">
-								  <th>Name</th>
-								  <th>Affiliation</th>
-								</tr>
-							</thead>
-							<tbody>
-							<tr>
-								<td>Daniel G. Aliaga</td>
-								<td>Purdue University</td>
-							</tr>
-							<tr>
-								<td>Daniela Cabiddu</td>
-								<td>CNR - Istituto di Matematica Applicata e Tecnologie Informatiche (IMATI)</td>
-							</tr>
-							<tr>
-								<td>Yiping Chen</td>
-								<td>Sun Yat-Sen University</td>
-							</tr>
-							<tr>
-								<td>Ian Endres</td>
-								<td>Hover Inc.</td>
-							</tr>
-							<tr>
-								<td>Hongchao Fan</td>
-								<td>Norwegian University of Science and Technology</td>
-							</tr>
-							<tr>
-								<td>Antoine Guédon</td>
-								<td>École Des Ponts Paristech</td>
-							</tr>
-							<tr>
-								<td>Liu He</td>
-								<td>Purdue University</td>
-							</tr>
-							<tr>
-								<td>Qingyong Hu</td>
-								<td>National University of Defense Technology</td>
-							</tr>
-							<tr>
-								<td>Yuzhong Huang</td>
-								<td>Hover Inc. / USC Information Sciences Institute</td>
-							</tr>
-							<tr>
-								<td>Loic Landrieu</td>
-								<td>Ecole des Ponts ParisTech</td>
-							</tr>
-							<tr>
-								<td>David Marx</td>
-								<td>CoreWeave, EleutherAI</td>
-							</tr>
-							<tr>
-								<td>Philippos Mordohai</td>
-								<td>Stevens Institute of Technology</td>
-							</tr>
-							<tr>
-								<td>Bisheng Yang</td>
-								<td>Wuhan University</td>
-							</tr>
-							</tbody>
-						</table>
-					</div>
-
-					<div class="col-sm-11 col-md-6">
-						<table class="table table-borderless">
-							<thead>
-								<tr style="text-align: right;">
-									<th>Name</th>
-									<th>Affiliation</th>
-								</tr>
-							</thead>
-							<tbody>
-							<tr>
-								<td>Liangliang Nan</td>
-								<td>Delft University of Technology</td>
-							</tr>
-							<tr>
-								<td>Rongjun Qin</td>
-								<td>The Ohio State University</td>
-							</tr>
-							<tr>
-								<td>Ziming Qui</td>
-								<td>NYU / Lowe's</td>
-							</tr>
-							<tr>
-								<td>Gunho Sohn</td>
-								<td>York University</td>
-							</tr>
-							<tr>
-								<td>Ioannis Stamos</td>
-								<td>City University of New York</td>
-							</tr>
-							<tr>
-								<td>Gábor Sörös</td>
-								<td>Bell Labs</td>
-							</tr>
-							<tr>
-								<td>George Vosselman</td>
-								<td>University of Twente</td>
-							</tr>
-							<tr>
-								<td>Jun Wang</td>
-								<td>Nanjing University of Aeronautics and Astronautics</td>
-							</tr>
-							<tr>
-								<td>Chenglu Wen</td>
-								<td>Xiamen University</td>
-							</tr>
-							<tr>
-								<td>Michael Ying Yang</td>
-								<td>University of Bath</td>
-							</tr>
-							<tr>
-								<td>Bo Yang</td>
-								<td>The Hong Kong Polytechnic University</td>
-							</tr>
-							<tr>
-								<td>Wei Yao</td>
-								<td>The Hong Kong Polytechnic University</td>
-							</tr>
-							<tr>
-								<td>Saurabh Prasad</td>
-								<td>University of Houston</td>
-							</tr>
-							<tr>
-								<td>Jiju Poovvancheri</td>
-								<td>Saint Mary’s University </td>
-							</tr>
-							</tbody>
-						</table>
-					
-
-						<!-- <table class="table table-borderless">
-							<thead>
-							<tr>
-								<th scope="col"><strong style="color: black">Name</strong></th>
-								<th scope="col"><strong style="color: black">Affiliation</strong></th>
-							</tr>
-							</thead>
-							<tbody>
-								
-							</tbody>
-						</table> -->
-					</div>
-				</div>
-			</section>
 
             <section id="location" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
 				<div class="row">
 					<div class="col-sm-12 col-md-8">
-						<h2>This is a CVPR 2024 workshop</h2>
+						<h2>This is a CVPR 2025 workshop</h2>
 						<ul class="contact">
                             <li class="contact-info">
 								<em class="fa fa-external-link"></em>
-								<span><a href="http://cvpr2024.thecvf.com/">CVPR 2024</a></span>
+								<span><a href="http://cvpr2025.thecvf.com/">CVPR 2025</a></span>
 								<!-- <img width="50px" src="images/logos/CVPR-logo.svg" alt="CVPR 2024"> -->
 							</li>
 						</ul>
