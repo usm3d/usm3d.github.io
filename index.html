@@ -22,195 +22,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.75">
         <meta http-equiv="Cache-control" content="public" max-age="86400">
 
-		<!--== CSS Files ==-->
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="css/style.css" rel="stylesheet" media="screen">
-		<link href="css/animate.min.css" rel="stylesheet" media="screen">
-		<link href="css/font-awesome.css" rel="stylesheet" media="screen">
-		<link href="css/flexslider.css" rel="stylesheet" media="screen">
-		<link href="css/fancySelect.css" rel="stylesheet" media="screen">
-		<link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-		<link href="css/responsive.css" rel="stylesheet" media="screen">
-
-		<!--== Google Fonts ==-->
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,400italic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
-
-        <style>
-			.pdfobject-container { height: 50rem; border: 1rem solid rgba(0,0,0,.4); }
-			.vidstyle{position:relative;width:100%;height:0;padding-bottom:56.27198%;}.vidstyle iframe{position:absolute;top:0;left:0;width:100%;height:100%;}
-		</style>
-		<style>
-			ul {
-			list-style-position: outside; /* Ensures the bullet is outside the content flow */
-			}
-
-			ul li {
-				padding-left: 1.2rem; 
-			}
-
-			th, td {
-				text-align: left;
-			}
-			#organizers .row {
-				display: flex;
-				justify-content: center;
-			}
-		</style>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<div id="home"></div>
-		<header id="header" class="header" data-stellar-ratio="0.5">
+    <div class="container">
 
-			<!--== Preloader ==-->
-			<div id="preloader"><div class="preloader"></div></div>
-
-			<!--== Caption ==-->
-			<div class="header-caption" data-stellar-ratio="2">
-				<div class="container">
-					<div class="box">
-						<!--<h2w>Multiview Relationships in 3D Data<br/></h2w><h3w>In Conjunction with ICCV 2017<br/></h3w>-->
-                        <h2w>2nd Workshop on Urban Scene Modeling: Where Vision Meets Photogrammetry and Graphics
-<br/></h2w><h2w>In Conjunction with CVPR 2025<br/></h2w>
-						<span class="typed"></span>
+        <header class="row text-center header info">
+            <img src="images/background.jpg" alt="Urban Scene Modeling Workshop" class="text-center banner">
+            <h1>2nd Workshop on Urban Scene Modeling</h1>
+            <h3>Where Vision Meets Photogrammetry and Graphics - CVPR 2025</h3>
+        </header>
+    
+        <section id="about">
+			<div class="row">
+				<div class="col-sm-12 col-md-3">
+					<div class="section-header text-left">
+						<img src="images/logos/logo-temp.webp" alt="CVPR Workshop Urban Scene Modeling 2025"
+							 class="img-responsive" >
 					</div>
+				</div>
+				<div class="col-sm-12 col-md-9">
+					<p style="text-align: justify;">
+						3D reconstruction and modeling are central to modern computer vision, with rapid 
+						urbanization creating urgent social and environmental challenges that demand 
+						innovative solutions. While substantial progress has been made in reconstructing 
+						basic 3D structures from images and point clouds, the next frontier lies in advancing 
+						structured and semantic reconstruction—moving beyond low-level 3D information to 
+						produce high-level, parametric models that capture both the structure and semantics 
+						of human environments.
+					</p>
+					<p style="text-align: justify;">
+						This workshop aims to bridge the gap between state-of-the-art 3D scene modeling and 
+						structured, semantic 3D reconstruction by bringing together researchers from 
+						photogrammetry, computer vision, generative models, learned representations, and 
+						computer graphics. Through invited talks, spotlight presentations, workshop challenges, 
+						and a poster session, we will foster interdisciplinary interaction and empower the next 
+						generation of 3D reconstruction technologies by integrating techniques from multi-view 
+						learning, geometric modeling, and machine perception. We welcome original contributions 
+						in structured reconstruction, learning-based approaches, and all areas related to urban 
+						scene modeling.
+					</p>
 				</div>
 			</div>
+		</section>
 
-			<!--== Header Background ==-->
-			<div id="header-background" class="header-background">
-				<ul class="slides">
-                    <li><img src="images/background.jpg" alt="CVPR Workshop 2024 - Urban Scene Modeling"></li>
-                    <!--<li><img src="images/demo/bg-slide-02.jpg" alt="Slide 2"></li>-->
-				</ul>
-			</div>
+        <section id="news">
+            <h2>News</h2>
+            <ul>
+                <li>Jan 2, 2025: Exciting news coming soon! 🎉</li>
+                <li>Dec 20, 2024: Workshop is accepted for CVPR 2025 🎉</li>
+            </ul>
+        </section>
 
-		</header>
-
-		<div id="navigation-wrap" class="navigation-wrap">
-			<div id="navigation" class="navigation">
-				<div class="container">
-					<nav class="navbar navbar-custom" role="navigation">
-
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-						</div>
-
-						<!--== Site Menu ==-->
-						<div class="collapse navbar-collapse" id="menu">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#home">Home</a></li>
-                                <li><a href="#news">News</a></li>
-								<li><a href="#challenge">Challenges</a></li>
-                                <li><a href="#callforpapers">Call for Papers</a></li>
-								<li><a href="#organizers">Organizers</a></li>
-								<li><a href="./2024/index.html">Last Year</a></li>
-							</ul>
-						</div>
-
-					</nav>
-				</div>
-			</div>
-		</div>
-
-		<div class="container content">
-
-
-
-			<!--===============================-->
-			<!--== About ======================-->
-			<!--===============================-->
-			<section id="about">
-				<div class="row">
-					<div class="col-sm-12 col-md-3">
-						<div class="section-header text-left">
-                            <img src="images/logos/logo-temp.webp" alt="CVPR Workshop Urban Scene Modeling 2024">
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-7">
-						<!--<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>-->
-                        <p style="text-align: justify;">
-							3D reconstruction and modeling are central to modern computer vision, with rapid 
-							urbanization creating urgent social and environmental challenges that demand 
-							innovative solutions. While substantial progress has been made in reconstructing 
-							basic 3D structures from images and point clouds, the next frontier lies in advancing 
-							structured and semantic reconstruction—moving beyond low-level 3D information to 
-							produce high-level, parametric models that capture both the structure and semantics 
-							of human environments.
-						</p>
-						<p style="text-align: justify;"></p>
-							This workshop aims to bridge the gap between state-of-the-art 3D scene modeling and 
-							structured, semantic 3D reconstruction by bringing together researchers from 
-							photogrammetry, computer vision, generative models, learned representations, and 
-							computer graphics. Through invited talks, spotlight presentations, workshop challenges, 
-							and a poster session, we will foster interdisciplinary interaction and empower the next 
-							generation of 3D reconstruction technologies by integrating techniques from multi-view 
-							learning, geometric modeling, and machine perception. We welcome original contributions 
-							in structured reconstruction, learning-based approaches, and all areas related to urban 
-							scene modeling.
-						</p>
+        <section id="challenge">
+            <h2>Challenges</h2>
+            <div class="row">
+				<div class="col-sm-12 col-md-3" style="padding: 0;">
+					<div class="section-header text-left">
+						<img src="images/logos/hf.png" alt="Building3D Challenge" style="margin-top: 2em;" >
 					</div>
 				</div>
-			</section>
-			
-			<section id="news">
-				<div class="row">
-					<div class="col-sm-12 col-md-3">
-						<div class="section-header text-left">
-							<h2><b>News!</b></h2>
-						</div>
-					</div>
-					<div class="col-sm-12 col-md-8">
-						<p><span><b>Jan 2, 2025</b></span>: Exciting news coming soon! 🎉</p>
-						<p><span><b>Dec 20, 2025</b></span>: Workshop is accepted for CVPR 2025 🎉</p>
-					</div>
-				</div>
-			</section>
-
-			<section id="challenge" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2><b>Challenges</b></h2>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-sm-6 col-md-3 ">
-						<br>
-						<div class="speaker">
-							<img src="images/logos/hf.png" alt="2nd Building3D Challenge!">
-							<div class="speaker-info">
-								<h3>Building3D <br> <b>Challenge!</b></h3>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="#" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-sm-12 col-md-9 ">
-						<h3><b>2nd Building3D Challenge</b></h3>
-						<p style="text-align: justify;">As part of this workshop, we are hosting the
-							<b><a target="_blank" href="https://huggingface.co/spaces/Building3D/USM3D">Building3D challenge</a></b>.
-							Building3D is an urban-scale publicly available dataset consisting of more than 160 thousand buildings
-							with corresponding point clouds, meshes, and wireframe models covering 16 cities in Estonia. For this challenge,
-							approximately 36, 000 buildings from the city of Tallinn are used as the training and testing dataset. Among them
-							, we selected 6000 relatively dense and structurally simple buildings as the Entry-level dataset. The wireframe
-							model is composed of points and edges representing shape and outline of the object. We require algorithms to take
-							the original point cloud as input and regress the wireframe model. For the evaluation, the metrics of mean
-							precision and recall are employed to evaluate accuracy of both points and edges, and overall offset of the
-							model is calculated. Additionally, the wireframe edit distance (WED) is used as an additional metric to
-							evaluate the accuracy of generated wireframe models. <b>In contrast to the first Building3D Challenge,
-								a new test dataset with entirely different building styles from the Building3D dataset will be used to evaluate the submissions. Enjoy &#128512;.</b>
-						</p>
-						<h3><b>Awards & Submissions</b></h3>
+				<div class="col-sm-12 col-md-9">
+                    <h3 style="margin-top: 0;">2nd Building3D Challenge</h3>
+					<p style="text-align: justify;">As part of this workshop, we are hosting the
+                        <b><a target="_blank" href="https://huggingface.co/spaces/Building3D/USM3D">Building3D challenge</a></b>.
+                        Building3D is an urban-scale publicly available dataset consisting of more than 160 thousand buildings
+                        with corresponding point clouds, meshes, and wireframe models covering 16 cities in Estonia. For this challenge,
+                        approximately 36, 000 buildings from the city of Tallinn are used as the training and testing dataset. Among them
+                        , we selected 6000 relatively dense and structurally simple buildings as the Entry-level dataset. The wireframe
+                        model is composed of points and edges representing shape and outline of the object. We require algorithms to take
+                        the original point cloud as input and regress the wireframe model. For the evaluation, the metrics of mean
+                        precision and recall are employed to evaluate accuracy of both points and edges, and overall offset of the
+                        model is calculated. Additionally, the wireframe edit distance (WED) is used as an additional metric to
+                        evaluate the accuracy of generated wireframe models. <b>In contrast to the first Building3D Challenge,
+                            a new test dataset with entirely different building styles from the Building3D dataset will be used to evaluate the submissions. Enjoy &#128512;.</b>
+                    </p>
+					<h3>Awards & Submissions</h3>
 						<p style="text-align: justify;">
 							The winning submission will receive a cash prize provided by the workshop sponsor and the chosen
 							finalists will be invited to present their research in the workshop. The prerequisite to receive
@@ -227,256 +115,159 @@
 						</ul>
 						<p style="text-align: justify;">Please see the <a href="#">Competition Rules</a> for additional information.</p>
 						<p>We thank <a href="http://www.iskyfly.com/">Intelligence.Ally Technology</a> for their generous sponsorship of this competition.</p>
-						<h3><b>Important Dates</b></h3>
+					<h3>Important Dates</h3>
 						<p style="text-align: justify;">
 							March 1 2025, Th: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Competition starts<br>
 							May 25 2025, Fri: &nbsp;&nbsp;&nbsp;&nbsp; Competition ends<br>
 							May 29 2025,  Fri: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Notification to Participants<br>
 							June 1 2025,  Tu: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Writeup Deadline<br>
 						</p>
-					</div>
 				</div>
-			</section>
+			</div>
+        </section>
 
-			<section id="callforpapers">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2><b>Call for Papers</b></h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-10 col-md-offset-1">
-						<p>We invite submissions of original research related to urban scene modeling. Topics of interest include, but are not limited to:</p>
-						<ul>
-							<li>Structured 3D Reconstruction/Modeling of human environments, including indoor and outdoor spaces, from sparse, noisy, or partial point clouds and images</li>
-							<li>Semantic, Instance, and Panoptic Segmentation and Parsing of 3D point clouds and images in complex human-centered environments</li>
-							<li>Fusion of Images and Point Clouds to improve the accuracy, detail, and structure of human-centric 3D scene modeling</li>
-							<li>Structured Representation of 3D Scenes, including parametric (e.g., CAD, B-Rep, Wireframe, etc.) models for buildings, interiors, and other human-made structures</li>
-							<li>Neural Implicit Representations for efficient and scalable modeling of large human environments</li>
-							<li>Learning Priors for Structured 3D Modeling, focusing on generating plausible, real-world human environments with structural consistency</li>
-							<li>Generative Models for Occlusion-Free Image Generation, enabling realistic texture mapping and enhanced 3D model quality</li>
-							<li>Multiview 3D Matching and Registration techniques for capturing and integrating scans of complex human spaces</li>
-							<li>Pose Estimation and Structured 3D Recovery from sparse image sets, with applications in architecture, robotics, and other domains</li>
-							<li>Differentiable Rendering and Occlusion Reasoning in human environments, such as indoor spaces, cityscapes, and public infrastructure</li>
-							<li>Applications of Structured and Semantic 3D Reconstruction in smart cities, construction, autonomous navigation, and digital twins</li>
-							<li>Benchmarks and Datasets for large-scale 3D modeling of human environments, driving new challenges and setting the standard for the field</li>
-						</ul>
-						<p>
-						We will accept submissions on two tracks: extended abstract submissions (up to 4 pages) and full papers (up to 8 pages) in the standard CVPR format. Accepted submissions will be presented as posters, and some will be selected for spotlight talks.
-						</p>
-						<p>
-						Paper submission deadline: March 24, 2025.
-						</p>
-						<p>
-						More details about the submission process will be announced soon.
-						</p>
-					</div>
-				</div>
-			</section>
+        <section id="callforpapers">
+            <h2>Call for Papers</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-12" >
+                    <p>We invite submissions of original research related to urban scene modeling. Topics of interest include, but are not limited to:</p>
+                    <ul>
+                        <li>Structured 3D Reconstruction/Modeling of human environments, including indoor and outdoor spaces, from sparse, noisy, or partial point clouds and images</li>
+                        <li>Semantic, Instance, and Panoptic Segmentation and Parsing of 3D point clouds and images in complex human-centered environments</li>
+                        <li>Fusion of Images and Point Clouds to improve the accuracy, detail, and structure of human-centric 3D scene modeling</li>
+                        <li>Structured Representation of 3D Scenes, including parametric (e.g., CAD, B-Rep, Wireframe, etc.) models for buildings, interiors, and other human-made structures</li>
+                        <li>Neural Implicit Representations for efficient and scalable modeling of large human environments</li>
+                        <li>Learning Priors for Structured 3D Modeling, focusing on generating plausible, real-world human environments with structural consistency</li>
+                        <li>Generative Models for Occlusion-Free Image Generation, enabling realistic texture mapping and enhanced 3D model quality</li>
+                        <li>Multiview 3D Matching and Registration techniques for capturing and integrating scans of complex human spaces</li>
+                        <li>Pose Estimation and Structured 3D Recovery from sparse image sets, with applications in architecture, robotics, and other domains</li>
+                        <li>Differentiable Rendering and Occlusion Reasoning in human environments, such as indoor spaces, cityscapes, and public infrastructure</li>
+                        <li>Applications of Structured and Semantic 3D Reconstruction in smart cities, construction, autonomous navigation, and digital twins</li>
+                        <li>Benchmarks and Datasets for large-scale 3D modeling of human environments, driving new challenges and setting the standard for the field</li>
+                    </ul>
+                    <p>
+                    We will accept submissions on two tracks: extended abstract submissions (up to 4 pages) and full papers (up to 8 pages) in the standard CVPR format. Accepted submissions will be presented as posters, and some will be selected for spotlight talks.
+                    </p>
+                    <p>
+                    Paper submission deadline: March 24, 2025.
+                    </p>
+                    <p>
+                    More details about the submission process will be announced soon.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-			<section id="organizers" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="section-header text-center">
-							<h2><b>Organizers</b></h2>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/ruisheng-wang.jpg" alt="Ruisheng Wang">
-							<div class="speaker-info">
-								<h3>Ruisheng <br> <b>Wang</b></h3>
-								<p>Professor<br>Shenzhen University</p>
-							</div>
-							<ul class="speaker-contacts">
-                                <li><a target="_blank" href="https://profiles.ucalgary.ca/ruisheng-wang" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/jack-langerman.png" alt="Jack Langerman">
-							<div class="speaker-info">
-								<h3>Jack<br> <b>Langerman</b></h3>
-								<p>Applied Researcher <br>Apple<br/> </p>
-							</div>
-							<ul class="speaker-contacts">                                
-                                <li><a target="_blank" href="https://jackml.com" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>	
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/ilke-demir.png" alt="Ilke Demir">
-							<div class="speaker-info">
-								<h3>Ilke<br> <b>Demir</b></h3>
-								<p>Senior Research Scientist<br>Intel Corporation <br/> &nbsp;</p>
-							</div>
-							<ul class="speaker-contacts">
-                                <li><a target="_blank" href="https://ilkedemir.weebly.com" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="https://dmytro.ai/photo.jpg" alt="Dmytro Mishkin">
-							<div class="speaker-info">
-								<h3>Dmytro<br> <b>Mishkin</b></h3>
-								<p>Researcher<br>Czech Technical University in Prague</p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://dmytro.ai" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/tolga-birdal.jpg" alt="Tolga Birdal">
-							<div class="speaker-info">
-								<h3>Tolga<br> <b>Birdal</b></h3>
-								<p>Assistant Professor<br>Imperial	College London, UK</p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://www.imperial.ac.uk/people/t.birdal" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/renzhong-guo.jpg" alt="Renzhong Guo">
-							<div class="speaker-info">
-								<h3>Renzhong<br> <b>Guo</b></h3>
-								<p>Professor<br>Shenzhen University <br/> &nbsp;</p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://saup.szu.edu.cn/info/1091/1415.htm" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/shangfeng-huang.png" alt="Shangfeng Huang">
-							<div class="speaker-info">
-								<h3>Shangfeng<br> <b>Huang</b></h3>
-								<p>Researcher<br>University of Calgary <br/> &nbsp;</p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://shangfenghuang.github.io" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>   
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/xiang-ma.png" alt="Xiang Ma">
-							<div class="speaker-info">
-								<h3>Xiang<br> <b>Ma</b></h3>
-								<p>Head of Research<br>Amazon Web Services <br/> &nbsp;</p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://www.linkedin.com/in/seanxiangma/" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/clement-mallet.jpeg" alt="Clement Mallet">
-							<div class="speaker-info">
-								<h3>Clement<br> <b>Mallet</b></h3>
-								<p>Research Scientist<br>LASTIG <br/></p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://www.umr-lastig.fr/clement-mallet/" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3 ">
-						<div class="speaker">
-							<img src="images/organizers/yang-wang.jpeg" alt="Yang Wang">
-							<div class="speaker-info">
-								<h3>Yang<br> <b>Wang</b></h3>
-								<p>Associate Professor<br>Concordia University</p>
-							</div>
-							<ul class="speaker-contacts">
-								<li><a target="_blank" href="https://users.encs.concordia.ca/~wayang/" class="fa fa-home"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-<!--				<div class="row justify-content-center">-->
-<!--					-->
-<!--					&lt;!&ndash;<div class="col-sm-12 col-md-12">-->
-<!--						<button class="button button-icon pull-right">Show more <span class="fa fa-chevron-down"></span></button>-->
-<!--					</div>&ndash;&gt;-->
-<!--				</div>-->
-			</section>
+        <section id="organizers">
+            <h2>Organizers</h2>
+            <div class="row text-center">
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://profiles.ucalgary.ca/ruisheng-wang">
+                        <img src="images/organizers/ruisheng-wang.jpg" alt="Ruisheng Wang" class="img-circle"
+                            style="width:150px;">
+                        <h4>Ruisheng <br> Wang</h4>
+                        <p>Professor <br> Shenzhen University</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://jackml.com">
+                        <img src="images/organizers/jack-langerman.png" alt="Jack Langerman" class="img-circle"
+                            style="width:150px;">
+                        <h4>Jack <br> Langerman</h4>
+                        <p>Applied Researcher <br> Apple</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://ilkedemir.weebly.com">
+                        <img src="images/organizers/ilke-demir.png" alt="Ilke Demir" class="img-circle"
+                            style="width:150px;">
+                        <h4>Ilke <br> Demir</h4>
+                        <p>Senior Research Scientist <br> Intel Corporation</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://dmytro.ai">
+                        <img src="https://dmytro.ai/photo.jpg" alt="Dmytro Mishkin" class="img-circle" style="width:150px;">
+                        <h4>Dmytro <br> Mishkin</h4>
+                        <p>Researcher <br> Czech Technical University in Prague</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://www.imperial.ac.uk/people/t.birdal">
+                        <img src="images/organizers/tolga-birdal.jpg" alt="Tolga Birdal" class="img-circle"
+                            style="width:150px;">
+                        <h4>Tolga <br> Birdal</h4>
+                        <p>Assistant Professor <br> Imperial College London</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://saup.szu.edu.cn/info/1091/1415.htm">
+                        <img src="images/organizers/renzhong-guo.jpg" alt="Renzhong Guo" class="img-circle"
+                            style="width:150px;">
+                        <h4>Renzhong <br> Guo</h4>
+                        <p>Professor <br> Shenzhen University</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://shangfenghuang.github.io">
+                        <img src="images/organizers/shangfeng-huang.png" alt="Shangfeng Huang" class="img-circle"
+                            style="width:150px;">
+                        <h4>Shangfeng <br> Huang</h4>
+                        <p>Researcher <br> University of Calgary</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://www.linkedin.com/in/seanxiangma/">
+                        <img src="images/organizers/xiang-ma.png" alt="Xiang Ma" class="img-circle" style="width:150px;">
+                        <h4>Xiang <br> Ma</h4>
+                        <p>Head of Research <br> Amazon Web Services</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://www.umr-lastig.fr/clement-mallet/">
+                        <img src="images/organizers/clement-mallet.jpeg" alt="Clement Mallet" class="img-circle"
+                            style="width:150px;">
+                        <h4>Clement <br> Mallet</h4>
+                        <p>Research Scientist <br> LASTIG</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://users.encs.concordia.ca/~wayang/">
+                        <img src="images/organizers/yang-wang.jpeg" alt="Yang Wang" class="img-circle" style="width:150px;">
+                        <h4>Yang <br> Wang</h4>
+                        <p>Associate Professor <br> Concordia University</p>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a target="_blank" href="https://www.yuzhonghuang.org/">
+                        <img src="images/organizers/yuzhong-huang.jpeg" alt="Yuzhong Huang" class="img-circle"
+                            style="width:150px;">
+                        <h4>Yuzhong <br> Huang</h4>
+                        <p>University of Southern California</p>
+                    </a>
+                </div>
+            </div>
+    </div>
+    </section>
 
+    <section id="links" class="container">
+        <h2>Links</h2>
+        <ul>
+            <li><p>Previous websites: <a href="./2024/index.html">2024</a></p></li>
+            <li><p>This is a <a href="http://cvpr2025.thecvf.com/">CVPR 2025</a> workshop</p></li>
+        </ul>
+    </section>
 
-            <section id="location" class="wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-				<div class="row">
-					<div class="col-sm-12 col-md-8">
-						<h2>This is a CVPR 2025 workshop</h2>
-						<ul class="contact">
-                            <li class="contact-info">
-								<em class="fa fa-external-link"></em>
-								<span><a href="http://cvpr2025.thecvf.com/">CVPR 2025</a></span>
-								<!-- <img width="50px" src="images/logos/CVPR-logo.svg" alt="CVPR 2024"> -->
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+    <footer class="text-center footer">
+        <p>All Rights Reserved. &copy; 2025</p>
+    </footer>
 
+    </div>
 
+</body>
 
-			<!--===============================-->
-			<!--== Footer =====================-->
-			<!--===============================-->
-			<footer id="footer" class="footer">
-				<div class="row">
-					<div class="col-sm-8">
-
-						<!--== Social Icons ==-->
-						<!--<ul class="social-icons">
-							<li><a href="#" class="fa fa-facebook"></a></li>
-							<li><a href="#" class="fa fa-twitter"></a></li>
-							<li><a href="#" class="fa fa-youtube"></a></li>
-							<li><a href="#" class="fa fa-linkedin"></a></li>
-						</ul>
--->
-					</div>
-					<div class="col-sm-4 text-right">
-						<div class="copyrights">All Rights Reserved. © 2024 </div>
-					</div>
-				</div>
-			</footer>
-			<!--==========-->
-
-		</div>
-
-		<!--== Javascript Files ==-->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_2muaLDbTKdh_ou9fkj8VjaWrFNgVBt0"></script>
-		<script src="js/jquery-2.1.0.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/SmoothScroll.min.js"></script>
-		<script src="js/typed.js"></script>
-		<script src="js/jquery.nav.js"></script>
-		<script src="js/jquery.stellar.js"></script>
-		<script src="js/jquery.flexslider-min.js"></script>
-		<script src="js/jquery.placeholder.js"></script>
-		<script src="js/jquery.accordion.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/fancySelect.js"></script>
-		<script src="js/wow.min.js"></script>
-		<script src="js/gmap3.min.js"></script>
-		<script src="js/main.min.js"></script>
-        <script src="js/pdfobject.min.js"></script>
-	</body>
 </html>
