@@ -39,6 +39,10 @@ html
     min-height: 100%;
     margin: 0;
 }
+img
+{
+    width: 100%;
+}
 .author
 {
     color: #444;
@@ -122,8 +126,7 @@ div.content
 }
 .header
 {
-    margin-top: 60px;
-    margin-bottom: 0px;
+    margin: 60px 0 0 0;
 }
 .info
 {
