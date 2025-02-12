@@ -205,9 +205,6 @@ h6.meta
 
     color: #8b8b8b;
 }
-section.meta {
-    margin-top:
-}
 .powered
 {
     font-family: 'Roboto', sans-serif;
@@ -301,10 +298,7 @@ div.item {
     width: 150px;
 }
 .headshot {
-    width: 125px;
-    height: 125px;
-    background-color: grey;
-    border-radius: 50%;
+    width: 150px;
 }
 .name {
     font-family: 'Roboto Slab', 'Roboto', 'Lato', sans-serif;
@@ -318,6 +312,7 @@ div.item {
     display: block;
     font-size: 14px;
     font-weight: 300;
+    margin-bottom: 1em;
 }
 span.nolinebreak { white-space: nowrap; }
 
