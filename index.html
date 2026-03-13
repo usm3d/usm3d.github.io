@@ -65,6 +65,9 @@
         <section id="news">
 			<div class="row">
 				<h2>News</h2>
+    			<ul>
+					<li>March 13, 2026: Competitions started! 🎉</li>
+				</ul>
 				<ul>
 					<li>December 22, 2025: 2026 proposal accepted! 🎉</li>
 				</ul>
@@ -198,7 +201,7 @@
 			<div class="row">
 				<h2>Challenges</h2>
                 <div>
-                    <h3 style="margin-top: 0;">S23DR Challenge (HoHo)</h3>
+                    <h3 style="margin-top: 0;"><a href="https://huggingface.co/spaces/usm3d/S23DR2026">S23DR Challenge (HoHo)</a></h3>
                     <div>
                         <div class="section-header text-left">
                             <img src="images/s23dr_data.png" alt="S23DR Challenge" style="margin-top: 2em;" >
@@ -208,6 +211,22 @@
                         exteriors with structured annotations, wireframes, sparse point clouds, camera poses, and derived
                         semantic signals. Raw images are not released due to licensing and privacy constraints.</p>
 
+                        <h3>Evaluation</h3>
+                        <p>Participants output a spatial graph for each challenge, with edge semantics defined by neighboring
+                        faces. As in 2024 and 2025, evaluation takes place on a private HuggingFace server using separate test
+                        sets for public and private leaderboards. The Hybrid Structure Score metric will be used for evaluation.</p>
+                        <h3>Important Dates</h3>
+                        <p style="text-align: justify;">
+                            March 13, 2026: &nbsp;&nbsp;&nbsp;&nbsp; Dataset release and competition start<br>
+                            May 25, 2026: &nbsp;&nbsp;&nbsp;&nbsp; Submission deadline<br>
+                            Winners announced: &nbsp;&nbsp;&nbsp;&nbsp; At workshop<br>
+                            Prize fund: &nbsp;&nbsp;&nbsp;&nbsp; $12 000 
+                        </p>
+                        <p>Dataset: <a href="https://huggingface.co/datasets/usm3d/hoho22k_2026_trainval" target="_blank">HoHo2026</a></p>
+                        <p>Competition: <a href="https://huggingface.co/spaces/usm3d/S23DR2026" target="_blank">S23DR 2026</a></p>
+                        
+                    </div>
+
 
                         <div>
                             <h3 style="margin-top: 0;">Building3D Challenge</h3>
@@ -216,8 +235,8 @@
                                     <img src="images/buildingworld/buildingworld.png" alt="Building World teaser" style="margin-top: 2em;" >
                                 </div>
                                 <p style="text-align: justify;">
-                                    We are delighted to <span style="color: #E67E22">announce that the Building3D Challenge</span>, held as part of the 3rd USM3D Workshop,
-                                    will feature a newly released dataset—<span style="color: red">BuildingWorld</span>.
+                                    We are delighted to <span style="color: #E67E22">announce that the <a href="https://huggingface.co/spaces/BuildingWorld/BuildingWorldChallenge">Building3D Challenge</a></span>, held as part of the 3rd USM3D Workshop,
+                                    will feature a newly released dataset—<span style="color: red"><a href="https://szusic.github.io/BuildingWorld/">BuildingWorld</a></span>.
                                     BuildingWorld is a comprehensive and structured 3D building dataset designed to <strong>bridge the gap in stylistic diversity</strong>.
                                     It encompasses buildings from geographically and architecturally <strong>diverse regions—including North America, Europe, Asia,
                                     Africa, and Oceania</strong>—offering a globally representative dataset for urban-scale foundation  modeling and analysis.
@@ -227,26 +246,16 @@
                                 <p style="text-align: justify;">
                                     In this challenge, participants are expected to <strong>train or build their models using the BuildingWorld dataset</strong>,
                                     with <strong style="color: #46b8da;">evaluation conducted on real aerial LiDAR point clouds</strong>. All submissions must be made through the Hugging Face platform.
-                                    The total prize pool remains at <span style="color: red; font-weight: 600;">USD 10,000</span>, and
+                                    The total prize pool remains at <span style="color: red; font-weight: 600;">$10 000</span>, and
                                     <strong>only submissions that outperform the baseline method will be considered for monetary awards</strong>.
                                 </p>
                                 <p>Datasets: <a href="https://szusic.github.io/BuildingWorld/" target="_blank">BuildingWorld</a> and
                                 <a href="https://huggingface.co/datasets/BuildingWorld/BuildingWorld" target="_blank">HuggingFace BuildingWorld</a></p>
+                                <p>Competition website: <a href="https://huggingface.co/spaces/BuildingWorld/BuildingWorldChallenge" target="_blank">Building3D Challenge 2026</a></p>
+                                
                             </div>
                         </div>
 
-                        <h3>Evaluation</h3>
-                        <p>Participants output a spatial graph for each challenge, with edge semantics defined by neighboring
-                        faces. As in 2024 and 2025, evaluation takes place on a private HuggingFace server using separate test
-                        sets for public and private leaderboards. The Hybrid Structure Score metric will be used for evaluation.</p>
-                        <h3>Important Dates</h3>
-                        <p style="text-align: justify;">
-                            February 1, 2026: &nbsp;&nbsp;&nbsp;&nbsp; Dataset release and competition start<br>
-                            June 1, 2026: &nbsp;&nbsp;&nbsp;&nbsp; Submission deadline<br>
-                            Winners announced: &nbsp;&nbsp;&nbsp;&nbsp; At workshop<br>
-                        </p>
-                        <p>Dataset: <a href="https://huggingface.co/datasets/usm3d/hoho25k" target="_blank">HuggingFace HoHo</a></p>
-                    </div>
                 </div>
 
                 <div>
