@@ -186,10 +186,39 @@
 
 					<h3>Important Dates</h3>
 					<ul>
-                        <li>Paper submission deadline: March 24, 2026</li>
+                        <li>Paper submission deadline: <strong>March 24, 2026 (Anywhere on Earth)</strong>
+                            <span id="countdown" style="margin-left: 0.5em; font-weight: bold; color: #c00;"></span>
+                        </li>
                         <li>Notification to authors: April 1, 2026</li>
                         <li>Camera-ready deadline (to USM3D): April 8, 2026</li>
 					</ul>
+					<script>
+					(function() {
+						// March 24, 2026 AoE = March 25, 2026 12:00 UTC
+						var deadline = new Date(Date.UTC(2026, 2, 25, 12, 0, 0));
+						var el = document.getElementById('countdown');
+						function update() {
+							var now = new Date();
+							var diff = deadline - now;
+							if (diff <= 0) {
+								el.textContent = '(Deadline passed)';
+								return;
+							}
+							var days = Math.floor(diff / 86400000);
+							var hours = Math.floor((diff % 86400000) / 3600000);
+							var mins = Math.floor((diff % 3600000) / 60000);
+							var secs = Math.floor((diff % 60000) / 1000);
+							var parts = [];
+							if (days > 0) parts.push(days + 'd');
+							if (hours > 0 || days > 0) parts.push(hours + 'h');
+							parts.push(mins + 'm');
+							parts.push(secs + 's');
+							el.textContent = '(' + parts.join(' ') + ' remaining)';
+							setTimeout(update, 1000);
+						}
+						update();
+					})();
+					</script>
 				</div>
 			</div>
 		</section>
