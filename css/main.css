@@ -316,6 +316,144 @@ div.item {
 }
 span.nolinebreak { white-space: nowrap; }
 
+/* Workshop schedule */
+.workshop-schedule h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.schedule-list {
+    margin: 0 auto 30px;
+    max-width: 960px;
+}
+
+.schedule-item {
+    margin-bottom: 6px;
+    background: #eef0f2;
+}
+
+.schedule-item summary {
+    position: relative;
+    display: grid;
+    grid-template-columns: 275px 1fr 78px;
+    align-items: center;
+    min-height: 78px;
+    padding: 0;
+    cursor: pointer;
+    list-style: none;
+}
+
+.schedule-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.schedule-item summary:after {
+    content: "";
+    justify-self: center;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #111;
+}
+
+.schedule-item[open] summary:after {
+    border-top: 0;
+    border-bottom: 8px solid #111;
+}
+
+.schedule-time {
+    padding: 0 32px;
+    color: #111;
+    font-size: 28px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.schedule-time sup {
+    top: -0.45em;
+    font-size: 55%;
+    font-weight: 700;
+}
+
+.schedule-title {
+    padding: 18px 24px 18px 0;
+    color: #111;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.schedule-detail {
+    display: grid;
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 30px;
+    margin: 0 78px 6px 14px;
+    padding: 40px 55px 48px;
+    background: #f6f7f8;
+}
+
+.schedule-photo {
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+}
+
+.schedule-bio h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #111;
+    font-size: 28px;
+}
+
+.schedule-bio p {
+    color: #6b7177;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+@media (max-width: 767px) {
+    .schedule-item summary {
+        grid-template-columns: 1fr 46px;
+        row-gap: 4px;
+        padding: 16px 0 16px 18px;
+    }
+
+    .schedule-time,
+    .schedule-title {
+        grid-column: 1;
+        padding: 0;
+    }
+
+    .schedule-time {
+        font-size: 23px;
+    }
+
+    .schedule-title {
+        font-size: 16px;
+    }
+
+    .schedule-item summary:after {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .schedule-detail {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 0 0 6px;
+        padding: 28px 24px 34px;
+    }
+
+    .schedule-photo {
+        width: 145px;
+        height: 145px;
+    }
+
+    .schedule-bio h3 {
+        font-size: 24px;
+    }
+}
+
 /* Datatables */
 table.leaderboard_stereo tr, th, td { font-size: 90%; text-align: center; }
 table.leaderboard_mvs tr, th, td { font-size: 80%; }
